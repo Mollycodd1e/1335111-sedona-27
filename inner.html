@@ -8,7 +8,7 @@
     <header>
       <nav>
         <div>
-         <a href="">
+         <a href="index.html">
             <img src="img/index-logo.svg" width="200" height="150" alt="Логотип City of Sedona">
         </div>
         <ul>
@@ -32,97 +32,90 @@
             Таким образом, при разметке нам нужно таким образом сделать обертки, чтоб внутри li было 3 тега - картинка и два тега div - обертки, которые будут включать в себя уже внутреннее содержимое. Задав стилями в последствии тегу li свойство flex, три элемента встанут в ряд  -->
             <!-- h3 это только название гостиницы, его обернуть в ссылку, так чтобы был предусмотрен переход на страницы гостиницы -->
             <li>
-              <h3>
-                  <img src="img/AmaraResortSpa.jpg" width="150" height="120" alt="Фото Amara Resort & Spa">
-                  <p>Amara resort & spa</p>
-                  <!-- Гостиница и цена это скорее два spana, обернутые или в тег p, или в тег div -->
-                  <p>Гостиница</p>
-                  <span>от 4000 Р.</span>
-                  <!-- Это две ссылки, обернутые в один тег обертку, без тега p  -->
-                  <p>
-                      <a href="#">Подробнее</a>
-                  </p>
-                  <p>
-                      <a href="#">Забронировать</a>
-                  </p>
-                  <!-- Звезды и рейтинг объединить в обертку  -->
-                 <!--  Звезда это фоновое изображение, можно пока просто под них span предусмотреть (подождем до лекции с графикой) -->
-                  <p>
-                      <!--Звездочки не понимаю как оформить-->
-                  </p>
-                  <!-- Можно оставить абзац или сделать span -->
-                  <p>
-                      Рейтинг:8.5
-                  </p>
-              </h3>
+              <a href="catalog.html">
+                <h3>Amara resort & spa</h3>
+              </a>
+              <img src="img/AmaraResortSpa.jpg" width="150" height="120" alt="Фото Amara Resort & Spa">
+              <div> 
+                <span>Гостиница</span>
+                <span>от 4000 Р.</span>
+              </div>  
+              <div>
+               <a href="#">Подробнее</a>                
+               <a href="#">Забронировать</a>
+              </div>       
+              <div>   
+                <p>
+                  <span>Звездочки</span>    <!--Звездочки не понимаю как оформить-->
+                </p> 
+                <span>
+                  Рейтинг:8.5
+                </span>
+              </div>
             </li>
             <li>
-                <h3>
-                    <img src="img/DesertQuailInn.jpg" width="150" height="120" alt="Фото desert quail inn">
-                    <p>Desert quail inn</p>
-                    <p>Мотель</p>
-                    <span>от 3000 Р.</span>
-                    <p>
-                        <a href="#">Подробнее</a>
-                    </p>
-                    <p>
-                        <a href="#">Забронировать</a>
-                    </p>
-                    <p>
-                        <!--Звездочки не понимаю как оформить-->
-                    </p>
-                    <p>
-                        Рейтинг:8.9
-                    </p>
-                </h3>
-              </li>
-              <li>
-                <h3>
-                    <img src="img/VillasAtPocoDiablo.jpg" width="150" height="120" alt="Фото Villas At Poco Diablo">
-                    <p>Amara resort & spa</p>
-                    <p>Апартаменты</p>
-                    <span>от 2000 Р.</span>
-                    <p>
-                        <a href="#">Подробнее</a>
-                    </p>
-                    <p>
-                        <a href="#">Забронировать</a>
-                    </p>
-                    <p>
-                        <!--Звездочки не понимаю как оформить-->
-                    </p>
-                    <p>
-                        Рейтинг:9.2
-                    </p>
-                </h3>
-              </li>
+              <h3>Desert quail inn</h3>
+               <img src="img/DesertQuailInn.jpg" width="150" height="120" alt="Фото desert quail inn">
+                <div>   
+                  <span>Мотель</span>
+                  <span>от 3000 Р.</span>
+                </div>
+                <div>
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
+                </div>  
+                <div>   
+                  <p>
+                    <span>Звездочки</span>    <!--Звездочки не понимаю как оформить-->
+                  </p> 
+                  <span>
+                    Рейтинг:8.9
+                  </span>
+                </div>   
+            </li>
+            <li>
+              <h3>Villas At Poco Diablo</h3>
+                <img src="img/VillasAtPocoDiablo.jpg" width="150" height="120" alt="Фото Villas At Poco Diablo">
+                <div>  
+                  <span>Апартаменты</span>
+                  <span>от 2000 Р.</span>
+                </div>  
+                <div>
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
+                </div>
+                <div>   
+                  <p>
+                    <span>Звездочки</span>    <!--Звездочки не понимаю как оформить-->
+                  </p> 
+                  <span>
+                    Рейтинг:9.2
+                  </span>
+                </div>   
+            </li>
           </ul>
       </section>
     </main>
     <footer>
-     <p>
-      #VISITSEDONA
-     </p>
-     <div>
+      <p>
+        #VISITSEDONA
+      </p>
+      <p>
+        ТЕЛ:+7(495)666-02-66
+      </p>  
       <ul>
         <li><a href="#">VK</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Youtube</a></li>
       </ul>
-     <p>
-      website by
-     </p>
-     <p>
-      <a href="htmlacademy.ru/instensive/htmlcss">
-        <img src="img/html-logo.svg" width="100" height="100" alt="Логотип Html">
-      </a>
       <div>
-        <p>
-          html<br>
-          academy
-        </p>
-      </div>
-     </p>
+        <span>
+          website by
+        </span>
+        <a href="htmlacademy.ru/instensive/htmlcss">
+          <img src="img/html-logo.svg" width="100" height="100" alt="Логотип Html">
+        </a>
+      </div> 
     </footer>
-  </body>>
+  </body>
 </html>
