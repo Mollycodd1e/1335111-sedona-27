@@ -22,7 +22,6 @@
       <section>
         <h1>Седона</h1>
           <img src="img/welcome.svg" width="459" height="353" alt="Welcome to the gorgeous,Sedona, Because the Grand canyon sucks">
-          <img src="img/polygon.png" width="1203" height="59" alt="Вырез нижнbй на фото">
       </section>
       <section>
         <h2>Преимущества</h2>
@@ -78,7 +77,7 @@
         <h2>Список преимуществ</h2>
         <ul>
           <li>
-            <p>Небольшая площадь</p>
+            <h3>Небольшая площадь</h3>
             <span>- № 3-</span>
             <p>
                Все достопримечательности
@@ -86,7 +85,7 @@
             </p>
           </li>
           <li>
-            <p>Красивая дорога</p>
+            <h3>Красивая дорога</h3>
             <span>- № 4-</span>
             <p>
                Ехать в Седону из Лас-Вегаса совсем
@@ -94,7 +93,7 @@
             </p>
           </li>
           <li>
-            <p>Мало туристов</p>
+            <h3>Мало туристов</h3>
             <span>- № 5-</span>
             <p>
                Большинство едет в гранд каньон
@@ -105,11 +104,27 @@
       </section>
       <section>
         <h2>Заинтересовались</h2>
+          <button type="button">Поиск гостиницы в Седоне</button>
           <div>
             <form action="#" method="get">
-              <p>Дата заезда</p>
-              <p>Дата выезда</p>
-              <p>Взрослые</p> <p>Дети</p>
+              <p>
+                Дата заезда
+                  <input type="text" name="arrivaldate">
+              </p>
+              <p>
+                Дата выезда
+                  <input type="text" name="arrivaldate">
+              </p>
+              <div>
+                <p>
+                  Взрослые
+                    <input type="number" name="adults">
+                </p>
+                <p>
+                  Дети
+                  <input type="number" name="childrens">
+                </p>
+              </div>
               <button type="button">Найти</button>
             </form>    
           </div>  
