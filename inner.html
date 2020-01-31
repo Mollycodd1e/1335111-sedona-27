@@ -19,10 +19,52 @@
       </nav>
     </header>
     <main>
-      <h1>Поиск отеля</h1>
-      <!--Фильтр-->
+      <h1 class="visually-hidden">Поиск отеля</h1>
+      <div>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="id_pool" checked>
+                <label for="id_pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="id_parking">
+                <label for="id_parking">Парковка</label>
+              </li>  
+              <li>
+                <input type="checkbox" name="wi-fi" id="id_wi-fi">
+                <label for="id_wi-fi">Wi-fi</label>
+              </li>    
+            </ul>  
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="id_hotel" checked>
+              <label for="id_hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="id_motel" checked>
+              <label for="id_motel">Мотель</label>
+            </li>  
+            <li>
+              <input type="checkbox" name="apartments" id="id_apartments">
+              <label for="id_apartments">Апартаменты</label>
+            </li>    
+          </ul>  
+        </fieldset>
+        <div>
+          <label for="cost-range">Стоимость в сутки (Р):</label>
+          <!--<output от min до max>-->
+          <input type="range" name="cost" id="cost-range" min="0" max="4000" step="100"><!--Второй ползунок?-->
+        </div>  
+        </form> 
+      </div>   
       <section>
-          <h2>Список результата поиска</h2>
+          <h2 class="visually-hidden">Список результата поиска</h2>
           <ul>
             <li>
               <img src="img/AmaraResortSpa.jpg" width="135" height="90" alt="Фото Amara Resort & Spa">
@@ -103,17 +145,15 @@
         </p>
       </div>
       <ul>
-        <li><a href="#"><img src="img/tw-icon.svg" width="17" height="15" alt="Иконка твиттера"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Икона фейсбука"></a></li>
-        <li><a href="#"><img src="img/youtube-icon.svg" width="20" height="16" alt="Иконка ютуба"></a></li>
+        <li><a href="#" aria-label="Вконтакте"></a></li>
+        <li><a href="#" aria-label="Фейсбук"></a></li>
+        <li><a href="#" aria-label="Youtube"></a></li>
       </ul>
       <div>
         <span>
           website by
         </span>
-        <a href="https://htmlacademy.ru/instensive/htmlcss">
-          <img src="img/logo-html.svg" width="115" height="41" alt="Логотип Html">
-        </a>
+        <a href="https://htmlacademy.ru/instensive/htmlcss" aria-label="Логотип Html"></a> 
       </div>
     </footer>
   </body>
