@@ -111,18 +111,15 @@
           </p>
           <button type="button">Поиск гостиницы в Седоне</button>
           <div>
-            <!--  в action формы поставить ссылку на тестовый сервер академии, чтобы данные отправлялись -->
-            <form action="#" method="post">
-             <!--  здесь обернуть в тег p (не div) -->
-              <div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
                 <label for="filter-arrivaldate">Дата заезда</label>
-                <input type="date" name="arrivaldate" id="filter-arrivaldate" value="24 апреля 2017">
-              </div>
-              <!--  здесь обернуть в тег p (не div) -->
-              <div>
+                <input type="text" name="arrivaldate" id="filter-arrivaldate" value="24 апреля 2017">
+              </p>
+              <p>
                 <label for="filter-departuredate">Дата выезда</label>
-                <input type="date" name="departuredate" id="filter-departuredate" value="4 июля 2017">
-              </div>
+                <input type="text" name="departuredate" id="filter-departuredate" value="4 июля 2017">
+              </p>
               <div>
                 <p>
                   <label for="filter-adults">Взрослые:</label>
