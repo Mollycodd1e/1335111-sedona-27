@@ -15,6 +15,31 @@ body {
     background-repeat:repeat;
 }
 
-.bg {
-    background-image:url(img/background-photo.jpg);  
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color:#000000;
+
+    background-color:#ffffff;
+
+}   
+
+.site-navigation {
+    list-style:none;
+}
+
+.site-navigation a {
+    color:#000000;
+}    
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color:#81b3d2;
+}
+.site-navigation a:active {
+    color:#b2b2b2;
 }
