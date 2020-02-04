@@ -23,24 +23,24 @@
     </header>
     <main>
       <section>
-        <h1 class="visually-hidden">Седона</h1>
+        <h1 class="visually-hidden welcome-logo">Седона</h1>
           <img src="img/welcome.svg" width="459" height="353" alt="Welcome to the gorgeous,Sedona, Because the Grand canyon sucks">
       </section>
       <section>
         <h2 class="visually-hidden features-list">Преимущества</h2>
-          <p>
+          <p class="description-sedona">
             Седона - небольшой городок в аризоне,
                   заслуживающий большего!
           </p>
-          <p>
+          <p class="features">
             Рассмотрим 5 причин, по которым седона круче,чем гранд каньон!
           </p>
       </section>
-      <section>
-        <div>
+      <section class="realtown">
+        <div class="features-item">
           <h2>Настоящий городок</h2>
           <span>- № 1 -</span>
-          <p>
+          <p >
             Седона- не аттракцион для туристов,
             там течёт своя жизнь
           </p>
@@ -49,16 +49,16 @@
       </section>
       <section>
         <h2 class="visually-hidden">Рекомендации</h2>
-        <ul>
-          <li>
+        <ul class="recommendation-list">
+          <li  class="recommendation-item"> 
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li>
+          <li class="recommendation-item">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li>
+          <li class="recommendation-item">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -66,7 +66,7 @@
       </section>
       <section>
         <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
-        <div>
+        <div class="features-item">
           <h2>Там есть <br>
               мост дьявола
           </h2>
@@ -79,8 +79,8 @@
       </section>
       <section>
         <h2 class="visually-hidden">Список преимуществ</h2>
-        <ul>
-          <li>
+        <ul class="features-list">
+          <li class="features-item">
             <h3>Небольшая площадь</h3>
             <span>- № 3-</span>
             <p>
@@ -88,7 +88,7 @@
                находятся очень близко
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Красивая дорога</h3>
             <span>- № 4-</span>
             <p>
@@ -96,7 +96,7 @@
                не скучно!
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Мало туристов</h3>
             <span>- № 5-</span>
             <p>
@@ -108,32 +108,32 @@
       </section>
       <section>
         <h2>Заинтересовались</h2>
-          <p>
+          <p class="travel-info">
             Укажите предполагаемые даты поездки<br>
             И мы покажем вам лучшие предложения гостиниц в седоне
           </p>
-          <button type="button">Поиск гостиницы в Седоне</button>
+          <button class="button" type="button">Поиск гостиницы в Седоне</button>
           <div>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <p>
+            <form class="hotel-info" action="https://echo.htmlacademy.ru" method="post">
+              <p class="arrivaldate-item">
                 <label for="filter-arrivaldate">Дата заезда</label>
                 <input type="text" name="arrivaldate" id="filter-arrivaldate" value="24 апреля 2017">
               </p>
-              <p>
+              <p class="departuredate-item">
                 <label for="filter-departuredate">Дата выезда</label>
                 <input type="text" name="departuredate" id="filter-departuredate" value="4 июля 2017">
               </p>
-              <div>
-                <p>
+              <div class="people-info">
+                <p class="adults-item">
                   <label for="filter-adults">Взрослые:</label>
                   <input type="number" name="adults" id="filter-adults" value="2" ><!--Вид стилями? уточню -->
                 </p>
-                <p>
+                <p class="childrens-item">
                   <label for="filter-childrens">Дети:</label>
                   <input type="number" name="childrens" id="filter-childrens" value="0"><!--Вид стилями? уточню -->
                 </p>
               </div>
-              <button type="submit">Найти</button>
+              <button class="button" type="submit">Найти</button>
             </form>
           </div>
       </section>
@@ -141,8 +141,8 @@
         <img src="img/map.jpg" width="1200" height="594" alt="Карта">
       </section>
     </main>
-    <footer>
-      <div>
+    <footer class="main-footer">
+      <div class="sedona-link">
         <p>
           #VISITSEDONA
         </p>
@@ -150,12 +150,12 @@
           <a href="tel:+74956660266">ТЕЛ:+7(495)666-02-66</a>
         </p>
       </div>
-      <ul>
+      <ul class="social-links">
         <li><a href="#" aria-label="Вконтакте"></a></li>
         <li><a href="#" aria-label="Фейсбук"></a></li>
         <li><a href="#" aria-label="Youtube"></a></li>
       </ul>
-      <div>
+      <div class="html-link">
         <span>
           website by
         </span>
