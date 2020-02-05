@@ -10,6 +10,7 @@ body {
     text-transform:uppercase;
 
     background-color: #ffffff;
+    /*это зададаим для секции*/
     background-image:url(img/background-photo.jpg);
     background-position:top center;
     background-repeat:no-repeat;
@@ -22,24 +23,29 @@ a {
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
+    /*цвет вы уже задали в body, он будет для всего сайта черный, переопределять нужно в случае, когда цвет другой*/
     color:#000000;
+    /*аналогично*/
     background-color:#ffffff;
 
-}   
+}
 
 .site-navigation {
     list-style:none;
     text-align: center;
 }
 
+/*для ссылок надо отдельно переопределять цвет, потому что они плохо стилизуются, по умолчанию синие*/
+
 .site-navigation a {
     color:#000000;
-}    
+}
 
 .site-navigation a:hover,
 .site-navigation a:focus {
     color:#81b3d2;
 }
+
 .site-navigation a:active {
     color:#b2b2b2;
 }
@@ -67,6 +73,8 @@ a {
 .feature-item h2 {
     font-size: 21px;
     line-height: 21px;
+    /*поскольку для боди мы зададим font-weight: 400; здесь надо переопределить
+    а в вашем варианте - он бы здесь не понадобился, css свойства наследуются от родителя*/
     font-weight: 700;
 }
 
@@ -87,9 +95,11 @@ a {
 
 .features-list {
     list-style:none;
+    /*надо для списка задать фон серый, а не для пунктов списка, иначе получится что расстояние между пунктами останется белым*/
 }
 
 .features-item {
+  /*здесь не нужно*/
     background-color:#ffffff;
     text-align: center;
     font-weight: 400;
@@ -99,7 +109,7 @@ a {
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-} 
+}
 
 .interested-wrapper h2 {
     font-size: 30px;
@@ -119,20 +129,25 @@ a {
     border:none;
 }
 
+/*не забывать, что все ховеры должны быть и фокусами! иначе с клавиатуры не будет работать*/
 .button-search-hotel:hover {
     background-color:#604e43;
 }
 .button-search-hotel:active {
     background-color:#503e33;
+    /*опечатка в цвете*/
     color:#ffffff4c;
 }
 
 .travel-item input {
     font:inherit;
+/*    разве нам нужно переопределять зедсь значение? по умолчанию left, а для body мы не задавали center*/
     text-align: left;
     border:none;
     background-color:#f2f2f2;
 }
+
+/*в инпутах разные ховер и фокус предусмотрен, поэтому так правильно*/
 
 .travel-item input:hover {
     background-color:#ebebeb;
@@ -147,7 +162,7 @@ a {
 .button-search {
     font:inherit;
     font-size: 21px;
-    
+
     color:#ffffff;
     vertical-align: middle;
     background-color:#81b3d2;
@@ -156,6 +171,7 @@ a {
     border:none;
 }
 
+/*фокус еще */
 .button-search:hover {
     background-color:#669ec0;
 }
@@ -199,7 +215,7 @@ a {
 }
 
 .htmlacademy-logo:active {
-    fill:#bdbbbc;    
+    fill:#bdbbbc;
 }
 
 .filters {
@@ -220,6 +236,7 @@ a {
     list-style:none;
 }
 
+/*фокус*/
 .infrastructure-input:hover,
 .house-type-input {
     border-color:#ffffff;
@@ -234,6 +251,8 @@ a {
 .cost input {
     border: solid 2px #000000;
 }
+/*
+для ползунков - будут демки, как их нарисовать*/
 
 .range-line {
     background-color:#000000;
@@ -253,6 +272,7 @@ a {
     color:#000000;
 }
 
+/*фокус*/
 .hotel-item h3:hover {
     color:#81b3d2;
 }
@@ -271,6 +291,7 @@ a {
     color:#ffffff;
 }
 
+/*фокус*/
 .show-button:hover {
     background-color:#ffffff;
     color:#000000;
@@ -283,6 +304,7 @@ a {
     background-color:#81b3d2;
 }
 
+/*фокус*/
 .button-info:hover {
     background-color:#669ec0;
 }
@@ -299,11 +321,13 @@ a {
     background-color:#766357;
 }
 
+/*фокус*/
 .button-reserve:hover {
     background-color:#604e43;
 }
 
 .button-reserve:active {
+ /* опечатка*/
     color:#ffffff4c;
     background-color:#503e33;
 }
