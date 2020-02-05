@@ -25,6 +25,7 @@
       <h1 class="visually-hidden">Гостиницы</h1>
       <section>
         <h2 class="visually-hidden">Фильтр</h2>
+        <!-- класс filters подойдет для секции, здесь filters-form -->
       <form class="filters" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
@@ -36,12 +37,12 @@
               <li class="infrastructure-item">
                 <input class="infrastructure-input" type="checkbox" name="parking" id="id_parking">
                 <label for="id_parking">Парковка</label>
-              </li>  
+              </li>
               <li class="infrastructure-item">
                 <input class="infrastructure-input" type="checkbox" name="wi-fi" id="id_wi-fi">
                 <label for="id_wi-fi">Wi-fi</label>
-              </li>    
-            </ul>  
+              </li>
+            </ul>
         </fieldset>
         <fieldset class="house-type">
           <legend>Тип жилья:</legend>
@@ -53,12 +54,12 @@
             <li class="house-type-item">
               <input class="house-type-input" type="checkbox" name="motel" id="id_motel" checked>
               <label for="id_motel">Мотель</label>
-            </li>  
+            </li>
             <li class="house-type-item">
               <input class="house-type-input" type="checkbox" name="apartments" id="id_apartments" checked>
               <label for="id_apartments">Апартаменты</label>
-            </li>    
-          </ul>  
+            </li>
+          </ul>
         </fieldset>
         <div>
           <fieldset class="cost">
@@ -66,17 +67,17 @@
           <div class="from-to">
             <label>
               <input type="number" name="price_from" value="0">
-            </label> 
+            </label>
             <label>
               <input type="number" name="price_up" value="3000">
-            </label>   
-          </div>  
+            </label>
+          </div>
           <input class="range-line" type="range" name="cost" id="cost-range" min="0" max="4000" step="100"><!--Второй ползунок? + value на оба ползунка-->
-          </fieldset>  
-        </div>  
+          </fieldset>
+        </div>
         <button class="show-button" type="submit">Показать</button>
-        </form> 
-      </section>   
+        </form>
+      </section>
       <section>
           <h2 class="visually-hidden">Список результата поиска</h2>
           <ul class="hotel-list">
@@ -86,15 +87,19 @@
                 <a href="#">
                   <h3>Amara resort & spa</h3>
                 </a>
+               <!--  это не ошибки, но будет удобнее исправить -->
+                 <!-- hotel-type -->
                 <div class="type">
                  <span>Гостиница</span>
                  <span>от 4000 Р.</span>
                 </div>
+                <!-- hotel-reservation -->
                 <div class="reservation">
                  <a class="button-info" href="#">Подробнее</a>
                  <a class="button-reserve" href="#">Забронировать</a>
                 </div>
               </div>
+              <!-- hotel-raiting -->
               <div class="raiting">
                 <span><img src="star.svg" width="18" height="17" alt="Звезда"></span>    <!--Звездочки не понимаю как оформить-->
                 <span>
@@ -164,7 +169,7 @@
         </li>
         <li ><a class="social-button " href="#" aria-label="Facebook"><img src="img/fb-icon.svg"
           class="icon"></a></li>
-        <li ><a class="social-button" href="#" aria-label="Youtube"><img src="img/youtube-icon.svg" 
+        <li ><a class="social-button" href="#" aria-label="Youtube"><img src="img/youtube-icon.svg"
           class="icon"></a></li>
       </ul>
       <div class="html-link">
