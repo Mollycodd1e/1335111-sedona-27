@@ -12,7 +12,7 @@ body {
     background-color: #ffffff;
     background-image:url(img/background-photo.jpg);
     background-position:top center;
-    background-repeat:repeat;
+    background-repeat:no-repeat;
 }
 
 a {
@@ -23,13 +23,13 @@ a {
     font-size: 14px;
     line-height: 26px;
     color:#000000;
-
     background-color:#ffffff;
 
 }   
 
 .site-navigation {
     list-style:none;
+    text-align: center;
 }
 
 .site-navigation a {
@@ -42,4 +42,160 @@ a {
 }
 .site-navigation a:active {
     color:#b2b2b2;
+}
+
+.current-page a {
+    color:#766357;
+}
+
+.description-sedona {
+    font-size: 21px;
+    text-align: center;
+}
+
+.features {
+    font-weight: 400;
+    text-align: center;
+}
+
+.features-item {
+    text-align: center;
+    background-color:#81b3d2;
+    font-weight: 400;
+}
+
+.features-item h2 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.recommendation-list {
+    list-style:none;
+}
+
+.recommendation-item {
+    text-align: center;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.recommendation-item h2 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.features-list {
+    list-style:none;
+}
+
+.features-list li {
+    background-color:#ffffff;
+}
+
+.interested {
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+} 
+
+.interested h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.button-search-hotel {
+    font:inherit;
+    font-size: 21px;
+    text-align: center;
+    color:#ffffff;
+    vertical-align: middle;
+    background-color:#766357;
+    width: 568px;
+    height: 86px;
+    border:none;
+}
+
+.button-search-hotel:hover {
+    background-color:#604e43;
+}
+.button-search-hotel:active {
+    background-color:#503e33;
+    color:#ffffff4c;
+}
+
+.travel-item input {
+    font:inherit;
+    text-align: left;
+    border:none;
+    background-color:#f2f2f2;
+}
+
+.travel-item input:hover {
+    background-color:#ebebeb;
+}
+
+.travel-item input:focus {
+    outline: 0;
+    background-color:#ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+.button-search {
+    font:inherit;
+    font-size: 21px;
+    
+    color:#ffffff;
+    vertical-align: middle;
+    background-color:#81b3d2;
+    width: 458px;
+    height: 58px;
+    border:none;
+}
+
+.button-search:hover {
+    background-color:#669ec0;
+}
+
+.button-search:active {
+    background-color:#5496bd;
+    color:#ffffff4c;
+}
+
+.main-footer {
+    background-color:#ffffff;
+    opacity: 0.9;
+}
+
+.sedona-link {
+    text-align: center;
+    font-size: 21px;
+}
+
+.sedona-link a {
+    color:#000000;
+}
+
+
+.social-links {
+    list-style:none;
+}
+
+.social-button {
+    color:#ffffff;
+}
+
+.icon {
+   fill:#ffffff;
+   background-color:#81b3d2;
+}
+
+.html-logo:hover,
+.html-logo:focus {
+    fill:#81b3d2;
+}
+
+.html-logo:active {
+    fill:#bdbbbc;    
 }
