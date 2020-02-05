@@ -204,10 +204,6 @@ a {
     background-image:url(img/filter-background.jpg);
 }
 
-.filters input{
-   
-}
-
 .infrastructure,
 .house-type,
 .cost {
@@ -308,5 +304,5 @@ a {
 .button-reserve:active {
     color:#ffffff4c;
     background-color:#503e33;
-}]
+}
 
