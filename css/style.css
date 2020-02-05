@@ -53,18 +53,18 @@ a {
     text-align: center;
 }
 
-.features {
+.description-reasons {
     font-weight: 400;
     text-align: center;
 }
 
-.features-item {
+.feature-item {
     text-align: center;
     background-color:#81b3d2;
     font-weight: 400;
 }
 
-.features-item h2 {
+.feature-item h2 {
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
@@ -89,17 +89,19 @@ a {
     list-style:none;
 }
 
-.features-list li {
+.features-item {
     background-color:#ffffff;
+    text-align: center;
+    font-weight: 400;
 }
 
-.interested {
+.interested-wrapper {
     font-weight: 400;
     line-height: 24px;
     text-align: center;
 } 
 
-.interested h2 {
+.interested-wrapper h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -168,12 +170,12 @@ a {
     opacity: 0.9;
 }
 
-.sedona-link {
+.sedona-link-wrapper {
     text-align: center;
     font-size: 21px;
 }
 
-.sedona-link a {
+.sedona-link-wrapper a {
     color:#000000;
 }
 
@@ -191,12 +193,12 @@ a {
    background-color:#81b3d2;
 }
 
-.html-logo:hover,
-.html-logo:focus {
+.htmlacademy-logo:hover,
+.htmlacademy-logo:focus {
     fill:#81b3d2;
 }
 
-.html-logo:active {
+.htmlacademy-logo:active {
     fill:#bdbbbc;    
 }
 
@@ -237,7 +239,7 @@ a {
     background-color:#000000;
 }
 
-.type {
+.hotel-type {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
