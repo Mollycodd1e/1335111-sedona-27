@@ -11,14 +11,8 @@ body {
 
     background-color: #ffffff;
     background-image:url(img/background-photo.jpg);
-    width: 1200px;
-    height: 800px;
     background-position:top center;
     background-repeat:no-repeat;
-}
-
-.filters {
-    background-image:url(img/filter-background.jpg);
 }
 
 a {
@@ -204,4 +198,36 @@ a {
 
 .html-logo:active {
     fill:#bdbbbc;    
+}
+
+.filters {
+    background-image:url(img/filter-background.jpg);
+}
+
+.filters input{
+    
+}
+
+.infrastructure,
+.house-type,
+.cost {
+    font:inherit;
+    border:none;
+}
+
+.infrastructure-list,
+.house-type-list {
+    list-style:none;
+}
+
+.cost input {
+    border: solid 2px #000000;
+}
+
+.range-line {
+    background-color:#000000;
+}
+
+.show-button {
+    border: solid 2px #000000;
 }
