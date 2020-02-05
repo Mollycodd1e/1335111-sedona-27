@@ -205,13 +205,15 @@ a {
 }
 
 .filters input{
-    
+   
 }
 
 .infrastructure,
 .house-type,
 .cost {
     font:inherit;
+    font-weight: 400;
+    line-height: 21px;
     border:none;
 }
 
@@ -220,6 +222,17 @@ a {
     list-style:none;
 }
 
+.infrastructure-input:hover,
+.house-type-input {
+    border-color:#ffffff;
+    color:#ffffff;
+}
+
+.infrastructure-input:disabled,
+.house-type-unput:disabled {
+    border-color:#6a6a6a;
+    color:#6a6a6a;
+}
 .cost input {
     border: solid 2px #000000;
 }
@@ -228,6 +241,72 @@ a {
     background-color:#000000;
 }
 
-.show-button {
-    border: solid 2px #000000;
+.type {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color:#333333;
 }
+
+.hotel-item h3 {
+    font-size:21px;
+    font-weight: 700;
+    line-height: 26px;
+    color:#000000;
+}
+
+.hotel-item h3:hover {
+    color:#81b3d2;
+}
+
+.hotel-item h3:active {
+    color:#000000;
+    opacity:30%;
+}
+
+.show-button {
+    font:inherit;
+    font-weight: 400;
+    line-height: 21px;
+    border: solid 2px #ffffff;
+    background-color:#000000;
+    color:#ffffff;
+}
+
+.show-button:hover {
+    background-color:#ffffff;
+    color:#000000;
+}
+
+.button-info {
+    font:inherit;
+    line-height: 21px;
+    color:#ffffff;
+    background-color:#81b3d2;
+}
+
+.button-info:hover {
+    background-color:#669ec0;
+}
+
+.button-info:active {
+    color:#ffffff4c;
+    background-color:#5496bd;
+}
+
+.button-reserve {
+    font:inherit;
+    line-height: 21px;
+    color:#ffffff;
+    background-color:#766357;
+}
+
+.button-reserve:hover {
+    background-color:#604e43;
+}
+
+.button-reserve:active {
+    color:#ffffff4c;
+    background-color:#503e33;
+}]
+
