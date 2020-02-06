@@ -2,15 +2,17 @@ body {
     margin:0;
     padding: 0;
 
-    font-family: "PT Sans Narrow",Arial,sans-serif ;
+    font-family: "PT Sans",Arial,sans-serif ;
     font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
+    line-height: 21px;
+    font-weight: 400;
     color:#000000;
     text-transform:uppercase;
 
     background-color: #ffffff;
-    /*это зададаим для секции*/
+}
+    
+.description {    /*в html еще svg в эту секцию?*/
     background-image:url(img/background-photo.jpg);
     background-position:top center;
     background-repeat:no-repeat;
@@ -21,13 +23,8 @@ a {
 }
 
 .main-navigation {
-    font-size: 14px;
     line-height: 26px;
-    /*цвет вы уже задали в body, он будет для всего сайта черный, переопределять нужно в случае, когда цвет другой*/
-    color:#000000;
-    /*аналогично*/
-    background-color:#ffffff;
-
+    font-weight: 700;
 }
 
 .site-navigation {
@@ -36,7 +33,6 @@ a {
 }
 
 /*для ссылок надо отдельно переопределять цвет, потому что они плохо стилизуются, по умолчанию синие*/
-
 .site-navigation a {
     color:#000000;
 }
@@ -54,28 +50,30 @@ a {
     color:#766357;
 }
 
+.description {
+    line-height: 26px;
+    text-align: center;
+}
 .description-sedona {
     font-size: 21px;
-    text-align: center;
+    font-weight: 700;
 }
 
 .description-reasons {
-    font-weight: 400;
-    text-align: center;
+    color:#333333;
 }
 
 .feature-item {
     text-align: center;
     background-color:#81b3d2;
-    font-weight: 400;
 }
 
 .feature-item h2 {
     font-size: 21px;
-    line-height: 21px;
-    /*поскольку для боди мы зададим font-weight: 400; здесь надо переопределить
-    а в вашем варианте - он бы здесь не понадобился, css свойства наследуются от родителя*/
     font-weight: 700;
+}
+.feature-item p{
+    color:#333333;   
 }
 
 .recommendation-list {
@@ -83,32 +81,31 @@ a {
 }
 
 .recommendation-item {
-    text-align: center;
-    line-height: 21px;
-    font-weight: 400;
+    text-align: center;  
 }
 
-.recommendation-item h2 {
+.recommendation-item h3 {
     font-size: 21px;
     font-weight: 700;
 }
 
+.recommendation-item p {
+    color:#333333;
+}
 .features-list {
     list-style:none;
     /*надо для списка задать фон серый, а не для пунктов списка, иначе получится что расстояние между пунктами останется белым*/
 }
 
 .features-item {
-  /*здесь не нужно*/
-    background-color:#ffffff;
     text-align: center;
-    font-weight: 400;
+    
 }
 
 .interested-wrapper {
-    font-weight: 400;
     line-height: 24px;
     text-align: center;
+    color:#333333;  
 }
 
 .interested-wrapper h2 {
@@ -120,6 +117,8 @@ a {
 .button-search-hotel {
     font:inherit;
     font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
     text-align: center;
     color:#ffffff;
     vertical-align: middle;
@@ -129,25 +128,26 @@ a {
     border:none;
 }
 
-/*не забывать, что все ховеры должны быть и фокусами! иначе с клавиатуры не будет работать*/
-.button-search-hotel:hover {
+.button-search-hotel:hover,
+.button-search-hotel:focus {
     background-color:#604e43;
 }
+
 .button-search-hotel:active {
     background-color:#503e33;
     /*опечатка в цвете*/
     color:#ffffff4c;
 }
 
+.travel-form {
+    font-weight: 700;
+}
+
 .travel-item input {
-    font:inherit;
-/*    разве нам нужно переопределять зедсь значение? по умолчанию left, а для body мы не задавали center*/
-    text-align: left;
+    font:inherit;   
     border:none;
     background-color:#f2f2f2;
 }
-
-/*в инпутах разные ховер и фокус предусмотрен, поэтому так правильно*/
 
 .travel-item input:hover {
     background-color:#ebebeb;
@@ -162,7 +162,6 @@ a {
 .button-search {
     font:inherit;
     font-size: 21px;
-
     color:#ffffff;
     vertical-align: middle;
     background-color:#81b3d2;
@@ -171,8 +170,8 @@ a {
     border:none;
 }
 
-/*фокус еще */
-.button-search:hover {
+.button-search:hover,
+.button-search:focus {
     background-color:#669ec0;
 }
 
@@ -189,6 +188,8 @@ a {
 .sedona-link-wrapper {
     text-align: center;
     font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 .sedona-link-wrapper a {
@@ -218,6 +219,10 @@ a {
     fill:#bdbbbc;
 }
 
+.website-by {
+    line-height: 26px;
+}
+
 .filters {
     background-image:url(img/filter-background.jpg);
 }
@@ -226,9 +231,11 @@ a {
 .house-type,
 .cost {
     font:inherit;
-    font-weight: 400;
-    line-height: 21px;
     border:none;
+}
+
+.legend {
+ font-size: 16px;
 }
 
 .infrastructure-list,
@@ -236,9 +243,10 @@ a {
     list-style:none;
 }
 
-/*фокус*/
 .infrastructure-input:hover,
-.house-type-input {
+.house-type-input:hover,
+.infrastructure-input:focus, 
+.house-type-input:focus {
     border-color:#ffffff;
     color:#ffffff;
 }
@@ -259,9 +267,6 @@ a {
 }
 
 .hotel-type {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
     color:#333333;
 }
 
@@ -272,8 +277,8 @@ a {
     color:#000000;
 }
 
-/*фокус*/
-.hotel-item h3:hover {
+.hotel-item h3:hover,
+.hotel-item h3:focus {
     color:#81b3d2;
 }
 
@@ -284,15 +289,13 @@ a {
 
 .show-button {
     font:inherit;
-    font-weight: 400;
-    line-height: 21px;
     border: solid 2px #ffffff;
     background-color:#000000;
     color:#ffffff;
 }
 
-/*фокус*/
-.show-button:hover {
+.show-button:hover,
+.show-button:focus {
     background-color:#ffffff;
     color:#000000;
 }
@@ -304,8 +307,8 @@ a {
     background-color:#81b3d2;
 }
 
-/*фокус*/
-.button-info:hover {
+.button-info:hover,
+.button-info:focus {
     background-color:#669ec0;
 }
 
@@ -321,8 +324,8 @@ a {
     background-color:#766357;
 }
 
-/*фокус*/
-.button-reserve:hover {
+.button-reserve:hover,
+.button-reserve:focus {
     background-color:#604e43;
 }
 
