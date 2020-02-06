@@ -10,12 +10,10 @@
   <body>
     <header>
       <nav class="main-navigation">
-
         <a href="#">
          <img src="img/logo.svg" width="140" height="72" alt="Логотип City of Sedona">
         </a>
         <ul class="site-navigation">
-          <!-- тех. задание: пункт 3.3 - главное меню: пункт «Информация» не является ссылкой на главную страницу, то есть главная - это отдельная страница, а страница инф-ции не является текущей.  -->
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -24,25 +22,20 @@
       </nav>
     </header>
     <main>
-        <h1 class="visually-hidden">Седона</h1>
-          <img src="img/welcome.svg" width="459" height="353"  alt="Welcome to the gorgeous,Sedona, Because the Grand canyon sucks">
+      <h1 class="visually-hidden">Седона</h1>
+        <img src="img/welcome.svg" width="459" height="353"  alt="Welcome to the gorgeous,Sedona, Because the Grand canyon sucks">
       <section class="description">
-        <!-- features-list здесь этот класс не подходит, можно назвать description секцию, далее уже description-title для подзаголовка -->
         <h2 class="visually-hidden description-title">Преимущества</h2>
           <p class="description-sedona">
             Седона - небольшой городок в аризоне,
                   заслуживающий большего!
           </p>
-          <!-- description-reasons, например -->
           <p class="description-reasons">
             Рассмотрим 5 причин, по которым седона круче,чем гранд каньон!
           </p>
       </section>
-      <!-- единообразное напсиание классов  -->
-      <!-- real-town -->
       <!-- второй общий класс (например 'feature') можете тогда потом добавить, когда будет делать сетку -->
-      <section class="realtown">
-        <!-- лучше предусмотреть отдельный класс (например, feature-item), чтоб он не повторялся с features-item в разделе Список преимуществ (посколько там фон у них разный) -->
+      <section class="real-town feature">
         <div class="feature-item">
           <h2>Настоящий городок</h2>
           <span>- № 1 -</span>
@@ -53,7 +46,6 @@
         </div>
         <img src="img/realtown.jpg" width="800" height="256" alt="Настоящий городок">
       </section>
-      <!-- для секции класс recommendation -->
       <section class="recommendation">
         <h2 class="visually-hidden">Рекомендации</h2>
         <ul class="recommendation-list">
@@ -74,11 +66,8 @@
           </li>
         <ul>
       </section>
-      <!-- для section добавить класс по аналогии, как с realtown. а также для секций realtown и этой (например, devilbridge) можно уже добавить второй общий класс (например 'feature') - который будет отвечать за распределение флекс элементов (картинка и feature-item) в обоях разделах. -->
-      <!-- единообразное напсиание классов  -->
-      <!-- devils-bridge -->
       <!-- второй общий класс (например 'feature') можете тогда потом добавить, когда будет делать сетку -->
-      <section class="Devils-Bridge">
+      <section class="devils-bridge feature">
         <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
         <div class="feature-item">
           <h2>Там есть <br>
@@ -91,7 +80,6 @@
           </p>
         </div>
       </section>
-      <!-- для секции можно добавить класс features -->
       <section class="features">
         <h2 class="visually-hidden">Список преимуществ</h2>
         <ul class="features-list">
@@ -121,12 +109,9 @@
           </li>
         </ul>
       </section>
-      <!-- для секции класс придумать, как я уже написала во вк лучше начинать писать классы для раздела, начиная с тега section, а уже для внутренних элементов с приставкой этого класса и через тире -->
       <section class="interested">
-        <!-- для оберток чаще всего добавляют класс wrapper (interested-wrapper, например) -->
         <div class="interested-wrapper">
           <h2>Заинтересовались?</h2>
-          <!-- чтобы не путаться, лучше с 'interested-' класс начать -->
           <p class="interested-info">
             Укажите предполагаемые даты поездки<br>
             И мы покажем вам лучшие предложения гостиниц в седоне
@@ -134,7 +119,6 @@
         </div>
           <button class="button-search-hotel" type="button">Поиск гостиницы в Седоне</button>
           <div>
-           <!--  класс travel-info повторяется (выше он был у абзаца), здесь подойдет interested-form (но тогда и по аналогии interested-item) или travel-form -->
             <form class="travel-form" action="https://echo.htmlacademy.ru" method="post">
               <p class="travel-item">
                 <label for="filter-arrivaldate">Дата заезда</label>
@@ -172,12 +156,22 @@
         </p>
       </div>
       <ul class="social-links">
-        <li><a class="social-button" href="#" aria-label="Twitter"><svg><path width="17" height="15" overflow="visible" viewBox="0 0 17 15" fill="#ffffff" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a>
+        <li>
+          <a class="social-button" href="#" aria-label="Twitter">
+            <svg><path width="17" height="15" overflow="visible" viewBox="0 0 17 15" fill="#ffffff" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+          </a>
         </li>
-        <li><a class="social-button " href="#" aria-label="Facebook"><svg><path fill="#ffffff" width="12" height="22" viewBox="0 0 12 22" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a></li>
-        <li><a class="social-button" href="#" aria-label="Youtube"><svg><path fill="#ffffff" width="20" height="16" viewBox="0 0 20 16" overflow="visible" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a></li>
+        <li>
+          <a class="social-button " href="#" aria-label="Facebook">
+            <svg><path fill="#ffffff" width="12" height="22" viewBox="0 0 12 22" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#" aria-label="Youtube">
+            <svg><path fill="#ffffff" width="20" height="16" viewBox="0 0 20 16" overflow="visible" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+          </a>
+        </li>
       </ul>
-      <!-- уточнить надо бы, htmlacademy -->
       <div class="htmlacademy-link">
         <span>
           website by
