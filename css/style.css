@@ -136,7 +136,7 @@ a {
 .button-search-hotel:active {
     background-color:#503e33;
     /*опечатка в цвете*/
-    color:#ffffff4c;
+    color:#857871;
 }
 
 .travel-form {
@@ -313,7 +313,7 @@ a {
 }
 
 .button-info:active {
-    color:#ffffff4c;
+    color:#857871;
     background-color:#5496bd;
 }
 
@@ -331,7 +331,7 @@ a {
 
 .button-reserve:active {
  /* опечатка*/
-    color:#ffffff4c;
+    color:#857871;
     background-color:#503e33;
 }
 
