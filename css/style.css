@@ -337,9 +337,26 @@ a {
     border:none;
 }
 
-.found-button-up {
-    border:none;
-    fill:#cacaca;
+.found-sort-list {
+    list-style:none;
+}
+
+.found-button-up,
+.found-button-down {
+    position:relative;
+    width:11px;
+    height:10px;
+}
+
+ /* кнопка - треугольник
+ .found-button-up::before {
+    content:"";
+    width: 0;
+    height: 0;
+    position:absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 23px solid red;*/
 }
 
 .found-button-up:hover,
@@ -392,5 +409,13 @@ a {
 .button-reserve:active {
     color:#857871;
     background-color:#503e33;
+}
+
+/*Сеточные стили*/
+
+html,
+body {
+    min-width: 1200;
+    min-height: 1800;
 }
 
