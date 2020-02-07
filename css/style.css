@@ -338,18 +338,15 @@ a {
 }
 
 .found-button-up {
-   background-color:#cacaca;
+    border:none;
+    fill:#cacaca;
 }
-
-.found-button-down {
-    color:#81b3d2;
-} 
 
 .found-button-up:hover,
 .found-button-down:hover,
 .found-button-up:focus,
 .found-button-down:focus {
-   background-color:#231f20;
+    fill:#000000;
 }
 
 .found-button-up:active,
