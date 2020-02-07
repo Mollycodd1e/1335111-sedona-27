@@ -94,7 +94,7 @@ a {
 }
 .features-list {
     list-style:none;
-    /*надо для списка задать фон серый, а не для пунктов списка, иначе получится что расстояние между пунктами останется белым*/
+    background-color:#ffffff;
 }
 
 .features-item {
@@ -135,7 +135,6 @@ a {
 
 .button-search-hotel:active {
     background-color:#503e33;
-    /*опечатка в цвете*/
     color:#857871;
 }
 
@@ -294,6 +293,70 @@ a {
     color:#ffffff;
 }
 
+.found-title {
+    font-size:14px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.found-filter {
+   
+    font-size:12px;
+    line-height:18px;
+}
+
+.found-filter-list {
+    list-style:none;
+    
+    font-size:12px;
+    line-height:18px;
+}
+.found-button-price {
+    color:#81b3d2;
+    border:none;
+}
+
+.found-button-type,
+.found-button-raiting {
+    color:#b2b2b2;
+    border:none;
+    border-bottom:1px dotted #81b3d2;
+}
+
+.found-button-type:hover,
+.found-button-raiting:hover,
+.found-button-type:focus,
+.found-button-raiting:focus {
+    color:#81b3d2;
+    border-bottom:1px dotted #81b3d2;
+}
+
+.found-button-type:active,
+.found-button-raiting:active {
+    color:#000000;
+    border:none;
+}
+
+.found-button-up {
+   background-color:#cacaca;
+}
+
+.found-button-down {
+    color:#81b3d2;
+} 
+
+.found-button-up:hover,
+.found-button-down:hover,
+.found-button-up:focus,
+.found-button-down:focus {
+   background-color:#231f20;
+}
+
+.found-button-up:active,
+.found-button-down:active {
+    color:#81b3d2;
+}
+
 .show-button:hover,
 .show-button:focus {
     background-color:#ffffff;
@@ -330,7 +393,6 @@ a {
 }
 
 .button-reserve:active {
- /* опечатка*/
     color:#857871;
     background-color:#503e33;
 }
