@@ -12,10 +12,11 @@ body {
     background-color: #ffffff;
 }
     
-.description {    /*в html еще svg в эту секцию?*/
-    background-image:url(img/background-photo.jpg);
-    background-position:top center;
-    background-repeat:no-repeat;
+.background {
+    background-image:url('../img/background-photo.jpg');
+    background-size: 1200px 800px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 a {
@@ -53,13 +54,24 @@ a {
 .description {
     line-height: 26px;
     text-align: center;
+    background-color: #ffffff;
+    background-position: top;
 }
+
 .description-sedona {
+    width: 440px;
+    height: 48px;
     font-size: 21px;
     font-weight: 700;
+    margin: auto;
+    margin-bottom: 38px;
 }
 
 .description-reasons {
+    width: 489px;
+    height: 13px;
+    margin: auto;
+    margin-bottom:56px;
     color:#333333;
 }
 
@@ -416,6 +428,72 @@ a {
 html,
 body {
     min-width: 1200;
-    min-height: 1800;
+    min-height: 2760;
+    margin-left:40px;
+    margin-right: 40px;
 }
 
+.container {
+    width:1195px;
+    margin:0 auto;
+    padding:0 0;        
+}
+
+.main-header {
+    min-height: 71px;
+}
+
+.main-navigation {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height: 71px;
+}
+
+.main-navigation-wrapper {
+    width:100%;
+    background-color:#ffffff;
+    justify-content: space-between;
+    
+}
+
+.main-navigation-wrapper .container {
+    display:flex;
+}
+
+.main-header-logo {
+    order:2;
+    width:140px;
+    height:71px;
+}
+
+.site-navigation {
+    width:1195px;
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    min-height: 56px;
+}
+
+.background .sedona { 
+    display:flex;
+    width:459px;
+    height: 353px;
+}
+
+.description-wrapper .conteiner {
+    display: flex;
+    flex-direction:column;
+    height: 216px;
+    align-items: center;
+}
+
+.feature {
+    display:flex;
+    height:256px;  
+    
+}
+
+.feature-item  {
+   ali
+}
