@@ -85,10 +85,12 @@ a {
     font-weight: 700;
 }
 .feature-item p{
+    margin:auto;
     color:#333333;   
 }
 
 .recommendation-list {
+    margin:auto;
     list-style:none;
 }
 
@@ -106,7 +108,7 @@ a {
 }
 .features-list {
     list-style:none;
-    background-color:#ffffff;
+    background-color:#eeeeee;
 }
 
 .features-item {
@@ -196,19 +198,19 @@ a {
     opacity: 0.9;
 }
 
-.sedona-link-wrapper {
+.footer-contacts {
     text-align: center;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
 }
 
-.sedona-link-wrapper a {
+.footer-contacts a {
     color:#000000;
 }
 
 
-.social-links {
+.footer-social {
     list-style:none;
 }
 
@@ -230,7 +232,7 @@ a {
     fill:#bdbbbc;
 }
 
-.website-by {
+.footer-copyright {
     line-height: 26px;
 }
 
@@ -475,25 +477,68 @@ body {
     min-height: 56px;
 }
 
-.background .sedona { 
-    display:flex;
-    width:459px;
-    height: 353px;
-}
-
 .description-wrapper .conteiner {
     display: flex;
     flex-direction:column;
-    height: 216px;
     align-items: center;
 }
 
 .feature {
     display:flex;
-    height:256px;  
-    
+    padding-right:60px;
+    padding-left:60px;
+    padding-top:46px;
+    padding-bottom:64px;
+    width:400px;
+    min-height: 256px;
 }
 
-.feature-item  {
-   ali
+.feature-item {
+    min-width:280px;
+    height: 146px;
+}
+
+.recommendation-list {
+    display: flex;
+    list-style:none;
+    margin: 0;
+    padding:0;
+}
+
+.features-list {
+    display:flex;
+    list-style:none;
+}
+
+.main-footer {
+    min-height: 120px;
+    padding-left:132px;
+    padding-right:101px;
+    padding-top:36px;
+    padding-bottom:32px;
+}
+
+.main-footer .conteiner {
+    display:flex;
+}
+
+.footer-contacts {
+    min-height: 84px;
+    margin: 0;
+    width:223px;
+    margin-right:169px;
+}
+
+.footer-social {
+    min-height: 84px;
+    margin: 0;
+    width:150px;
+    margin-right:228px;
+}
+
+.footer-htmlacademy {
+    margin:0;
+    min-height: 81px;
+    padding-top:39px;
+    width:197px;
 }
