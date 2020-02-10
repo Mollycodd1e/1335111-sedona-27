@@ -106,23 +106,25 @@ a {
     background-color:#8eb4d2;
     background-image:url('../img/background-photo.jpg');
     background-repeat: no-repeat;
-    background-position:center center;
-}   
+    background-position: bottom center;
+    background-size: 1200px 800px;
+
+}
 
 .welcome {
     display: block;
     margin:0 auto;
-    padding-top:61px;
+    padding-top:76px;
     padding-bottom:22px;
-}
-
-.polygon {
-    display: block;
 }
 
 .description {
     min-height: 216px;
     line-height: 26px;
+    padding-top:38px;
+    padding-left:355px;
+    padding-right:356px;
+    
     text-align: center;
     background-color: #ffffff;
 
@@ -134,9 +136,6 @@ a {
     font-size: 21px;
     font-weight: 700;
     margin:0;
-    padding-top:61px;
-    padding-left:380px;
-    padding-right:380px;
 }
 
 .description-reasons {
@@ -144,9 +143,6 @@ a {
     min-height: 13px;
     margin:0;
     padding-top:38px;
-    padding-left:355px;
-    padding-right:356px;
-    
     color:#333333;
 }
 
@@ -180,37 +176,100 @@ a {
     padding: 0;
 }
 
-.recommendation-list li:nth-child(1) {
-    padding-left:73px;
-    padding-bottom:85px;
-    padding-top:60px;
-    padding-right:133px;
-}
-
-.recommendation-list li:nth-child(2) {
-    padding-bottom:87px;
-    padding-top:62px;
-    padding-right:122px; 
-}
-
-.recommendation-list li:nth-child(3) {
-    padding-bottom:86px;
-    padding-top:56px;
-    padding-right:103px; 
-}
-
 .recommendation-item {
     text-align: center;  
+    width: 400px;
 }
 
-.recommendation-item p
-.recommendation-item h3 {
+.recommendation-item h3,
+.features-item h3 {
     font-size: 21px;
     font-weight: 700;
 }
 
-.recommendation-item p {
+.recommendation-item:first-child p {
+    margin-left: 73px; 
+    margin-right: 75px; 
     color:#333333;
+}
+
+.recommendation-item:nth-child(2) p {
+    margin-left: 58px; 
+    margin-right: 58px; 
+    color:#333333;
+}
+
+.recommendation-item:last-child p {
+    margin-left: 64px; 
+    margin-right: 63px; 
+    color:#333333;
+}
+
+.recommendation-item:first-child h3 {
+    position: relative;   
+    padding: 0;
+    margin: 0;
+    padding-top: 161px;  
+}
+
+.recommendation-item:nth-child(2) h3 {
+    position: relative;   
+    padding: 0;
+    margin: 0;
+    padding-top: 164px;  
+}
+
+
+.recommendation-item:last-child h3 {
+    position: relative;   
+    padding: 0;
+    margin: 0;
+    padding-top: 164px;  
+}
+
+.recommendation-item:first-child h3::before {
+    content:"";
+
+    width: 75px;
+    height: 72px;
+    bottom:49px;
+    left:50%;
+    margin:0;
+    margin-left:-36px;
+    position: absolute;
+    background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.recommendation-item:nth-child(2) h3::before {
+    content:"";
+
+    width: 74px;
+    height: 70px;
+    bottom:49px;
+    left:50%;
+    margin:0;
+    margin-left:-36px;
+    position: absolute;
+    background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.recommendation-item:last-child h3::before {
+    content:"";
+
+    width: 64px;
+    height: 76px;
+    bottom:48px;
+    left:50%;
+    margin:0;
+    margin-left:-38px;
+    position: absolute;
+    background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
 }
 
 .devils-bridge .feature-item {
@@ -224,7 +283,6 @@ a {
 }   
 
 .features { 
-    min-width: 400px;
     min-height: 256px;
     background-color:#eeeeee;
 }
@@ -237,13 +295,25 @@ a {
     list-style:none;
 }
 
-.features-list li:nth-child(1) {
-    width:208px;
-    
+.features-item {
+    margin-top: 50px;
+    width: 400px;
+    text-align: center;
 }
 
-.features-item {
-    text-align: center;
+.features-item:first-child p {
+    margin-left: 95px;
+    margin-right: 97px;
+}
+
+.features-item:nth-child(2) p {
+    margin-left: 69px;
+    margin-right: 69px;
+}
+
+.features-item:last-child p {
+    margin-left: 77px;
+    margin-right: 77px;
 }
 
 .interested-wrapper {
@@ -298,6 +368,8 @@ map {
 }
 
 .travel-form {
+    display: flex;
+    flex-direction: column;
     min-height: 395px;
     padding-left:55px;
     padding-right:55px;
@@ -353,11 +425,17 @@ map {
 }
 
 .main-footer {
+    display: flex;
+    margin-top: 36px;
     background-color:#ffffff;
     opacity: 0.9;
 }
 
 .footer-contacts {
+    margin: 0;
+    width: 223px;
+    margin-left: 132px;
+    margin-right: 169px;
     text-align: center;
     font-size: 21px;
     font-weight: 700;
@@ -370,16 +448,34 @@ map {
 
 
 .footer-social {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style:none;
 }
 
 .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
     color:#ffffff;
+    background-color:#81b3d2 ;
 }
 
-.icon {
-   fill:#ffffff;
-   background-color:#81b3d2;
+.social-button:hover,
+.social-button:focus {
+    background-color:#669ec0;
+}
+
+.social-button:active {
+    background-color: #5496bd;
+}
+
+.social-button:active path {
+    opacity: 0.3;
 }
 
 .htmlacademy-logo:hover,
@@ -391,8 +487,11 @@ map {
     fill:#bdbbbc;
 }
 
-.footer-copyright {
-    line-height: 26px;
+.footer-htmlacademy {
+    display: flex;
+    margin: 0;
+    margin-left: 241px;
+    margin-top: 18px;
 }
 
 .filters {
@@ -521,17 +620,6 @@ map {
     height:10px;
 }
 
- /* кнопка - треугольник
- .found-button-up::before {
-    content:"";
-    width: 0;
-    height: 0;
-    position:absolute;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 23px solid red;*/
-
-
 .found-button-up:hover,
 .found-button-down:hover,
 .found-button-up:focus,
@@ -582,38 +670,4 @@ map {
 .button-reserve:active {
     color:#857871;
     background-color:#503e33;
-}
-
-/*Сеточные стили*/
-.main-footer {
-    min-height: 120px;
-    padding-left:132px;
-    padding-right:101px;
-    padding-top:36px;
-    padding-bottom:32px;
-}
-
-.main-footer .conteiner {
-    display:flex;
-}
-
-.footer-contacts {
-    min-height: 84px;
-    margin: 0;
-    width:223px;
-    margin-right:169px;
-}
-
-.footer-social {
-    min-height: 84px;
-    margin: 0;
-    width:150px;
-    margin-right:228px;
-}
-
-.footer-htmlacademy {
-    margin:0;
-    min-height: 81px;
-    padding-top:39px;
-    width:197px;
 }
