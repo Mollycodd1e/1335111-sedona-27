@@ -57,16 +57,13 @@ a {
     display:flex;
 }
 
-.site-navigation li {
-    height:12px;
-}
-
 .site-navigation li:first-child,
 .site-navigation li:nth-child(2),
 .site-navigation li:last-child,
 .site-navigation li:nth-child(3) {
     padding-top:22px;
-    padding-bottom:22px;   
+    padding-bottom:22px;
+    margin:0; 
 }
 
 .site-navigation li:first-child,
