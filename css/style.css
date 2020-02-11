@@ -122,7 +122,7 @@ a {
     margin-bottom:22px;
 }
 
-/*.background::after {
+.background::after {
     content:"";
 
     bottom:-1px;
@@ -135,7 +135,7 @@ a {
     position: absolute;
     background-repeat: no-repeat;
     background-position: 0;
-}*/
+}
 
 .description {
     min-height: 216px;
@@ -388,18 +388,43 @@ map {
 
 .travel-form {
     display: flex;
-    flex-direction: column;
-    min-height: 395px;
+    flex-wrap: wrap;
+    
+    padding-top:55px;   
     padding-left:55px;
     padding-right:55px;
+    padding-bottom:55px;
     position: absolute;
     font-weight: 700;
     background-color: #ffffff;
 }
 
+.travel-item {
+    height: 38px;
+    margin:0;
+}
+
+.travel-item:first-child {
+    margin-bottom:29px;
+}
+
+.travel-item:nth-child(2) {
+    margin-bottom:30px;
+}
+
+.travel-form label:first-child {
+    margin-right:13px;
+}
+
+.travel-form label:nth-child(2) {
+    margin-right:13px;
+}
+
 .travel-item input {
     font:inherit;  
-    width:346px;
+    padding-left:13px;
+    height:38px;
+    width:333px;
     border:none;
     background-color:#f2f2f2;
 }
@@ -416,9 +441,21 @@ map {
 
 .people-wrapper {
     display: flex;
+    justify-content: space-between;
+    height:38px;
 }
 
-.people-wrapper input {
+.people-wrapper .travel-item {
+    margin:0;
+}
+
+.people-wrapper input:first-child {
+    margin-left:41px;
+    width: 114px;
+}
+
+.people-wrapper input:nth-child(2) {
+    margin-left:27px;
     width: 114px;
 }
 
@@ -429,7 +466,8 @@ map {
     vertical-align: middle;
     background-color:#81b3d2;
     width: 458px;
-    height: 58px;
+    height:58px;
+    margin-top:54px;
     border:none;
 }
 
@@ -445,9 +483,9 @@ map {
 
 .main-footer {
     display: flex;
-    margin-top: 36px;
     background-color:#ffffff;
     opacity: 0.9;
+    padding-top:36px;
 }
 
 .footer-contacts {
