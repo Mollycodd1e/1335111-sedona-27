@@ -45,7 +45,8 @@ a {
     top:0;
     left:50%;
     margin-left:-70px;
-    position: absolute;    
+    position: absolute;  
+    z-index: 1;  
 }
 
 .site-navigation {
@@ -103,22 +104,38 @@ a {
 }
 
 .background {
+    min-height:510px;
     background-color:#8eb4d2;
     background-image:url('../img/background-photo.jpg');
     background-repeat: no-repeat;
-    top:150px;
-    background-position: center top;
-
+    background-position: 0 25%;
     background-size: 1200px 800px;
+    position: relative;
 
 }
 
 .welcome {
     display: block;
     margin:0 auto;
-    padding-top:76px;
-    padding-bottom:22px;
+    
+    padding-top:61px;
+    margin-bottom:22px;
 }
+
+/*.background::after {
+    content:"";
+
+    bottom:-1px;
+    left:50%;
+    margin-top:0;
+    margin-left: -600px;
+    background-image:url('../img/polygon.png');
+    width:1203px;
+    height: 59px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0;
+}*/
 
 .description {
     min-height: 216px;
