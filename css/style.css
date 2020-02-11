@@ -106,7 +106,9 @@ a {
     background-color:#8eb4d2;
     background-image:url('../img/background-photo.jpg');
     background-repeat: no-repeat;
-    background-position: bottom center;
+    top:150px;
+    background-position: center top;
+
     background-size: 1200px 800px;
 
 }
