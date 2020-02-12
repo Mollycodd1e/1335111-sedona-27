@@ -462,9 +462,9 @@ map {
 }
 
 .footer-contacts {
-    margin: 0;
+    margin-bottom:32px;
     width: 223px;
-    margin-left: 132px;
+    margin-left:132px;
     margin-right: 169px;
     text-align: center;
     font-size: 21px;
@@ -472,6 +472,10 @@ map {
     line-height: 26px;
 }
 
+.footer-visit-sedona {
+    margin-top:0;
+    margin-right:271px;
+}
 .footer-contacts a {
     color:#000000;
 }
