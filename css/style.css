@@ -114,66 +114,51 @@ a {
 .welcome {
     display: block;
     margin:0 auto;
-    
     padding-top:61px;
-    margin-bottom:22px;
+    
 }
 
 .background::after {
     content:"";
-
-    bottom:-1px;
-    left:50%;
-    margin-top:0;
-    margin-left: -600px;
+    left:0;
+    bottom:0;
     background-image:url('../img/polygon.png');
     width:1203px;
     height: 59px;
     position: absolute;
-    background-repeat: no-repeat;
-    background-position: 0;
+    background-repeat: no-repeat;   
 }
 
 .description {
-    min-height: 216px;
     line-height: 26px;
-    padding-top:38px;
+    padding-top: 38px;
     padding-left:355px;
     padding-right:356px;
-    
     text-align: center;
     background-color: #ffffff;
-
 }
 
 .description-sedona {
-    width: 440px;
-    height: 48px;
     font-size: 21px;
     font-weight: 700;
     margin:0;
+    margin-bottom:38px;
 }
 
 .description-reasons {
-    width: 489px;
-    min-height: 13px;
     margin:0;
-    padding-top:38px;
+    margin-bottom:56px;
     color:#333333;
 }
 
 .feature {
     display:flex;
-    min-width:400px;
-    min-height: 256px;
 }
 
 .feature-item {
     padding-top:46px;
     padding-left:60px;
     padding-right:60px;
-    min-width:280px;
-    min-height: 143px;
     text-align: center;
     background-color:#81b3d2;
     color:#ffffff;
@@ -243,49 +228,37 @@ a {
     padding-top: 164px;  
 }
 
-.recommendation-item:first-child h3::before {
+.recommendation-item h3::before {
     content:"";
+    left:50%;
+    margin:0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
 
+.recommendation-item:first-child h3::before {
     width: 75px;
     height: 72px;
     bottom:49px;
-    left:50%;
-    margin:0;
     margin-left:-36px;
-    position: absolute;
     background-image: url("../img/icon-1.svg");
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
 .recommendation-item:nth-child(2) h3::before {
-    content:"";
-
     width: 74px;
     height: 70px;
     bottom:49px;
-    left:50%;
-    margin:0;
     margin-left:-36px;
-    position: absolute;
     background-image: url("../img/icon-2.svg");
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
 .recommendation-item:last-child h3::before {
-    content:"";
-
     width: 64px;
     height: 76px;
     bottom:48px;
-    left:50%;
-    margin:0;
     margin-left:-38px;
-    position: absolute;
     background-image: url("../img/icon-3.svg");
-    background-repeat: no-repeat;
-    background-position: 0;
 }
 
 .devils-bridge .feature-item {
@@ -333,14 +306,16 @@ a {
 }
 
 .interested-wrapper {
+    width:434px;
+    margin: auto;
     line-height: 24px;
-    margin-top: 57px;
     margin-bottom: 52px;
     text-align: center;
     color:#333333;  
 }
 
 .interested-wrapper h2 {
+    margin:auto;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
