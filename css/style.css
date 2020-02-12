@@ -102,14 +102,13 @@ a {
 }
 
 .background {
-    min-height:510px;
+    min-height: 508px;
     background-color:#8eb4d2;
     background-image:url('../img/background-photo.jpg');
     background-repeat: no-repeat;
     background-position: 0 25%;
     background-size: 1200px 800px;
     position: relative;
-
 }
 
 .welcome {
@@ -528,8 +527,33 @@ map {
     margin-top: 18px;
 }
 
-.filters {
-    background-image:url(img/filter-background.jpg);
+.filter {
+    min-height:217px;
+    background-color:#8eb4d2;
+    background-image: url("../img/filter-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px 800px;
+    background-position: 0 50%;
+    position: relative;
+}
+
+.filter-form {
+    display: flex;
+    margin-right:74px;
+    margin-left:72px;
+    padding-top:31px;
+    text-align: left;
+}
+
+.filter-form fieldset {
+    margin:0;
+    padding:0;
+}
+
+.filter-form ul {
+    margin:0;
+    padding:0;
+    color:#ffffff;
 }
 
 .infrastructure,
@@ -540,12 +564,191 @@ map {
 }
 
 .legend {
- font-size: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom:26px;
+    color:#ffffff;
+}
+
+.filter-form .infrastructure {
+    margin-right:115px;
+}
+
+.filter-form .house-type {
+    margin-right:350px;
+}
+
+.infrastructure-item,
+.house-type-item {
+    margin-bottom:23px;
+    padding-left:40px;
+}
+
+.infrastructure-item,
+.house-type-item {
+    position: relative;
+  
+    display: block;
 }
 
 .infrastructure-list,
 .house-type-list {
     list-style:none;
+}
+
+.infrastructure-input-ckeckbox + label::before,
+.house-type-input-ckeckbox + label::before {
+    content:"";
+    position: absolute;
+    left:0;
+    top:0;
+    width: 23px;
+    height: 23px;
+  
+    background-image: url("../img/checkbox-off.png");
+    background-repeat: no-repeat;
+    background-position:0 0;
+}
+
+.infrastructure-input-ckeckbox:checked + label::after,
+.house-type-input-ckeckbox:checked + label::after {
+    content:"";
+    position: absolute;
+    left:0;
+    top:0;
+    width: 27px;
+    height: 23px;
+
+    background-image: url("../img/checkbox-on.png");
+    background-repeat: no-repeat;
+    background-position:0 0;
+}
+
+.filter-range {
+    width: 330px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.filter-range-title {
+    font-weight: 700;
+    font-size:16px;
+    margin-bottom: 9px;
+}
+
+.price-control {
+    position: relative;
+
+    height: 36px;
+    margin-bottom: 20px;
+  
+    font-size: 0;
+
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.price-control::after {
+    content: "";
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+  
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-control label {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+  
+    cursor: pointer;
+}
+
+.price-control .min-price,
+.price-control .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-control input {
+    width: 50px;
+    margin: 0;
+  
+    color: inherit;
+    font: inherit;
+  
+    background: none;
+    border: none;
+}
+
+.range-control {
+    position: relative;
+  
+    margin-bottom: 32px;
+}
+
+.range-control .scale {
+    height: 2px; 
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-control .bar {
+    width: 80%;
+    height: 2px;
+  
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+  
+.range-toggle-max {
+    left: 80%;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.show-button {
+    display:block;
+    margin:0 auto;
+    padding: 6px 35px;
+
+    font-size: 14px;
+    line-height: 20px;
+    color:#ffffff;
+    text-transform: uppercase;
+    background-color:transparent;
+    border:2px solid #ffffff;
+    cursor: pointer;
+}
+
+.show-button:hover,
+.show-button:focus {
+    background-color:#ffffff;
+    color:#000000;
 }
 
 .infrastructure-input:hover,
@@ -560,15 +763,6 @@ map {
 .house-type-unput:disabled {
     border-color:#6a6a6a;
     color:#6a6a6a;
-}
-.cost input {
-    border: solid 2px #000000;
-}
-/*
-для ползунков - будут демки, как их нарисовать*/
-
-.range-line {
-    background-color:#000000;
 }
 
 .hotel-type {
@@ -590,13 +784,6 @@ map {
 .hotel-item h3:active {
     color:#000000;
     opacity:30%;
-}
-
-.show-button {
-    font:inherit;
-    border: solid 2px #ffffff;
-    background-color:#000000;
-    color:#ffffff;
 }
 
 .found-title {
@@ -664,12 +851,6 @@ map {
 .found-button-up:active,
 .found-button-down:active {
     color:#81b3d2;
-}
-
-.show-button:hover,
-.show-button:focus {
-    background-color:#ffffff;
-    color:#000000;
 }
 
 .button-info {
