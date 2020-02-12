@@ -28,6 +28,7 @@ overflow:hidden;background-position: 0 0;
 .site {
     width:1200px;
     margin:0 auto;
+    position: relative;
 }
 
 a {
@@ -306,9 +307,10 @@ a {
 }
 
 .interested-wrapper {
-    width:434px;
+    /*width:434px;*/
     margin: auto;
     line-height: 24px;
+    margin-top:57px;
     margin-bottom: 52px;
     text-align: center;
     color:#333333;  
@@ -316,6 +318,7 @@ a {
 
 .interested-wrapper h2 {
     margin:auto;
+    margin-bottom:26px;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -326,7 +329,6 @@ a {
     display: block;
     width: 568px;
     height: 86px;
-    margin: auto;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -353,15 +355,10 @@ map {
 .button-search-hotel-wrapper {
     position:relative;
     width:568px;
-    top:0;
-    left:50%;
-    margin-left: -284px;
+    margin:0 auto;
 }
 
-.travel-form {
-    display: flex;
-    flex-wrap: wrap;
-    
+.travel-form {   
     padding-top:55px;   
     padding-left:55px;
     padding-right:55px;
@@ -369,6 +366,7 @@ map {
     position: absolute;
     font-weight: 700;
     background-color: #ffffff;
+    z-index:1;
 }
 
 .travel-item {
@@ -456,8 +454,11 @@ map {
 .main-footer {
     display: flex;
     background-color:#ffffff;
+    position: absolute;
     opacity: 0.9;
     padding-top:36px;
+    left:0;
+    bottom:0;
 }
 
 .footer-contacts {
