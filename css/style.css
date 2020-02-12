@@ -765,27 +765,6 @@ map {
     color:#6a6a6a;
 }
 
-.hotel-type {
-    color:#333333;
-}
-
-.hotel-item h3 {
-    font-size:21px;
-    font-weight: 700;
-    line-height: 26px;
-    color:#000000;
-}
-
-.hotel-item h3:hover,
-.hotel-item h3:focus {
-    color:#81b3d2;
-}
-
-.hotel-item h3:active {
-    color:#000000;
-    opacity:30%;
-}
-
 .found-title {
     font-size:14px;
     line-height: 26px;
@@ -852,6 +831,67 @@ map {
 .found-button-down:active {
     color:#81b3d2;
 }
+.hotel-item h3 {
+    font-size:21px;
+    font-weight: 700;
+    line-height: 26px;
+    color:#000000;
+}
+
+.hotel-item h3:hover,
+.hotel-item h3:focus {
+    color:#81b3d2;
+}
+
+.hotel-item h3:active {
+    color:#000000;
+    opacity:30%;
+}
+
+.hotel-type {
+    color:#333333;
+}
+
+.found {
+    display: flex;
+}
+.found-filter {
+    display: flex;
+}
+.found-filter-list .hotel-type {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+
+.hotel-list {
+    margin: 0;
+    padding:0;
+    margin-left:72px;
+    list-style:none;
+}
+.hotel-item {
+    display: flex;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.hotel-info h3 {
+    margin:0;
+    padding:0;
+    margin-bottom:17px;
+}
+
+.hotel-type {
+    margin-bottom:18px;
+}
 
 .button-info {
     font:inherit;
@@ -885,4 +925,11 @@ map {
 .button-reserve:active {
     color:#857871;
     background-color:#503e33;
+}
+
+.inner-footer {
+    display: flex;
+    background-color:#ffffff;
+    opacity: 0.9;
+    padding-top:36px;
 }
