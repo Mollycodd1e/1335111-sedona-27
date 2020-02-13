@@ -43,7 +43,7 @@ a {
 
 .main-header-logo {
     display:block;
-    top:0;
+    height:71px;
     left:50%;
     margin-left:-70px;
     position: absolute;  
@@ -59,7 +59,7 @@ a {
     display:flex;
     padding-left:72px;
     padding-right:72px;
-    justify-content: space-between;
+    
 }
 
 .site-navigation li{
@@ -106,7 +106,7 @@ a {
     background-color:#8eb4d2;
     background-image:url('../img/background-photo.jpg');
     background-repeat: no-repeat;
-    background-position: 0 25%;
+    background-position:center 28%;
     background-size: 1200px 800px;
     position: relative;
 }
@@ -114,7 +114,9 @@ a {
 .welcome {
     display: block;
     margin:0 auto;
-    padding-top:61px;
+    padding-top:77px;
+    width:459px;
+    min-height:353px;
     
 }
 
@@ -131,7 +133,7 @@ a {
 
 .description {
     line-height: 26px;
-    padding-top: 38px;
+    padding-top: 60px;
     padding-left:355px;
     padding-right:356px;
     text-align: center;
@@ -142,12 +144,12 @@ a {
     font-size: 21px;
     font-weight: 700;
     margin:0;
-    margin-bottom:38px;
+    margin-bottom:28px;
 }
 
 .description-reasons {
     margin:0;
-    margin-bottom:56px;
+    margin-bottom:50px;
     color:#333333;
 }
 
@@ -167,6 +169,7 @@ a {
 .feature-item h2 {
     font-size: 21px;
     font-weight: 700;
+    
 }
 
 .recommendation-list {
