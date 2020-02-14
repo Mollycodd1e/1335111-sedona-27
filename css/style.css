@@ -191,6 +191,10 @@ a {
     font-weight: 700;
 }
 
+.recommendation-item h3 {
+    margin-bottom:15px;
+}
+
 .recommendation-item:first-child p {
     margin-left: 73px; 
     margin-right: 75px; 
