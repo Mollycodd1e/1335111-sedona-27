@@ -97,7 +97,7 @@ a {
     color:#b2b2b2;
 }
 
-.current-page a {
+.current-page {
     color:#766357;
 }
 
@@ -556,7 +556,7 @@ map {
     display: flex;
     margin-right:74px;
     margin-left:72px;
-    padding-top:31px;
+    padding-top:27px;
     text-align: left;
 }
 
