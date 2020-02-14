@@ -556,7 +556,7 @@ map {
     display: flex;
     margin-right:74px;
     margin-left:72px;
-    padding-top:27px;
+    padding-top:26px;
     text-align: left;
 }
 
@@ -888,7 +888,7 @@ map {
     padding-left:72px;  
     padding-top:30px;
     padding-bottom:30px;
-    border:1px solid #000000;
+    border:1px solid #e5e5e5;
     border-left:none;
     border-right:none;
 }
