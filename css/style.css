@@ -782,7 +782,10 @@ map {
 
 .found-title {
     display: inline-block;
-    font-size:14px;
+    margin:0;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size:21px;
     line-height: 26px;
     font-weight: 700;
 }
@@ -897,6 +900,7 @@ map {
     display: flex;
     flex-direction: column;
     margin-left:30px;
+    margin-right:540px;
 }
 
 .hotel-info h3 {
@@ -920,7 +924,36 @@ map {
 }
 
 .hotel-type {
-    margin-bottom:18px;
+    margin-bottom:16px;
+}
+
+.hotel-raiting {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:relative;
+    
+}
+
+
+.hotel-item .hotel-raiting::before {
+    content:"";
+    
+    position:absolute;
+    width:74px;
+    height: 17px;
+    background-image: url("../img/star.svg");
+    background-repeat:repeat-x;
+    right:100%;
+
+}
+
+.hotel-item:nth-child(2) .hotel-raiting::before {
+    width:54px;
+}
+
+.hotel-item:last-child .hotel-raiting::before {
+    width:36px;
 }
 
 .button-info {
