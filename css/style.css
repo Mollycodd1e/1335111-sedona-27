@@ -7,7 +7,7 @@ body {
     padding:0;
     color:#000000;
     text-transform:uppercase;
-    background-color: #ffffff;
+    background-color:#f2f2f2;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -29,6 +29,7 @@ overflow:hidden;background-position: 0 0;
     width:1200px;
     margin:0 auto;
     position: relative;
+    background-color: #ffffff;
 }
 
 a {
@@ -43,7 +44,6 @@ a {
 
 .main-header-logo {
     display:block;
-    height:71px;
     left:50%;
     margin-left:-70px;
     position: absolute;  
@@ -64,12 +64,10 @@ a {
 
 .site-navigation li{
     width:239px;
-}
-
-.site-navigation li {
     padding-top:15px;
     padding-bottom:15px;
 }
+
 .site-navigation li:first-child,
 .site-navigation li:nth-child(2) {
     text-align:left;
@@ -122,10 +120,10 @@ a {
 
 .background::after {
     content:"";
-    left:0;
-    bottom:0;
+    left:-1px;
+    bottom:-1px;
     background-image:url('../img/polygon.png');
-    width:1203px;
+    width:1204px;
     height: 59px;
     position: absolute;
     background-repeat: no-repeat;   
@@ -137,7 +135,6 @@ a {
     padding-left:355px;
     padding-right:356px;
     text-align: center;
-    background-color: #ffffff;
 }
 
 .description-sedona {
@@ -155,6 +152,7 @@ a {
 
 .feature {
     display:flex;
+    background-color:#81b3d2;
 }
 
 .feature-item {
@@ -162,8 +160,8 @@ a {
     padding-left:60px;
     padding-right:60px;
     text-align: center;
-    background-color:#81b3d2;
     color:#ffffff;
+    padding-bottom:10px;
 }
 
 .feature-item h2 {
@@ -183,6 +181,7 @@ a {
 .recommendation-item {
     text-align: center;  
     width: 400px;
+    padding-bottom:10px;
 }
 
 .recommendation-item h3,
@@ -237,7 +236,6 @@ a {
 .recommendation-item h3::before {
     content:"";
     left:50%;
-    margin:0;
     position: absolute;
     background-repeat: no-repeat;
     background-position: 0;
@@ -247,6 +245,7 @@ a {
     width: 75px;
     height: 72px;
     bottom:49px;
+    margin-left:-37px;
     background-image: url("../img/icon-1.svg");
 }
 
@@ -277,8 +276,9 @@ a {
 }   
 
 .features { 
-    min-height: 256px;
+    min-height: 246px;
     background-color:#eeeeee;
+    padding-bottom:10px;
 }
 
 .features-list {
@@ -311,7 +311,7 @@ a {
 }
 
 .interested-wrapper {
-    /*width:434px;*/
+    width:434px;
     margin: auto;
     line-height: 24px;
     margin-top:50px;
@@ -461,42 +461,42 @@ map {
     display: flex;
     background-color:#ffffff;
     position: absolute;
+    align-items:center;
+    width:1200px;
+    padding-left:132px;
+    padding-right:101px;
+    padding-top:22px;
+    padding-bottom:22px;
     opacity: 0.9;
-    padding-top:30px;
     left:0;
     bottom:0;
 }
 
 .footer-contacts {
     width: 223px;
-    margin-left:132px;
-    margin-right: 169px; 
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    margin-right:159px;
 }
 
 .footer-visit-sedona {
     margin:0;
-    padding:0;
-    text-align: left;
+    margin-bottom:10px;
 }
 
-.footer-visit-sedona p {
-    margin:0;
-    padding:0;
-}
-
-.footer-contacts a {
-    margin:0;
-    text-align: left;
-    padding-bottom:28px;
+.footer-contacts a {  
     color:#000000;
 }
 
+.footer-telefon {
+    margin:0;
+}
 
 .footer-social {
     width: 150px;
+    margin-right: 241px;
+    padding:0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -538,8 +538,6 @@ map {
 .footer-htmlacademy {
     display: flex;
     margin: 0;
-    margin-left: 241px;
-    margin-top: 18px;
 }
 
 .filter {
