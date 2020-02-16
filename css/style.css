@@ -120,10 +120,10 @@ a {
 
 .background::after {
     content:"";
-    left:-1px;
-    bottom:-1px;
+    left:-2px;
+    bottom:-2px;
     background-image:url('../img/polygon.png');
-    width:1204px;
+    width:1203px;
     height: 59px;
     position: absolute;
     background-repeat: no-repeat;   
@@ -295,26 +295,34 @@ a {
     text-align: center;
 }
 
+.features-item h3 {
+    margin-top:0;
+}
+
 .features-item:first-child p {
     margin-left: 95px;
     margin-right: 97px;
+    margin-bottom:0;
 }
 
 .features-item:nth-child(2) p {
     margin-left: 69px;
     margin-right: 69px;
+    margin-bottom:0;
 }
 
 .features-item:last-child p {
     margin-left: 77px;
     margin-right: 74px;
+    margin-bottom:0;
 }
 
 .interested-wrapper {
-    width:434px;
+    width:436px;
     margin: auto;
     line-height: 24px;
     margin-top:50px;
+    padding-bottom:3px;
     margin-bottom: 45px;
     text-align: center;
     color:#333333;  
@@ -326,6 +334,10 @@ a {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
+}
+
+.interested-info {
+    margin:0;
 }
 
 .button-search-hotel {
@@ -375,34 +387,54 @@ map {
 }
 
 .travel-item {
-    height: 38px;
-    margin:0;
+    margin:0px;
 }
 
-.travel-item:first-child {
+.travel-input {
+    display: flex;
+    align-items: center;
     margin-bottom:29px;
 }
 
-.travel-item:nth-child(2) {
-    margin-bottom:30px;
-}
-
-.travel-form label:first-child {
-    margin-right:13px;
-}
-
-.travel-form label:nth-child(2) {
-    margin-right:13px;
-}
-
-.travel-item input {
-    font:inherit;
+.travel-input input {
+    position: relative;
+    height: 38px;
+    width: 333px;
+    margin-left: 13px;
     padding-left:13px;
-    height:38px;
-    width:333px;
-    text-transform: uppercase;
+    flex-grow:1;
     border:none;
     background-color:#f2f2f2;
+    text-transform: uppercase;
+}
+
+.travel-input:nth-child(2) input {
+    margin:0;
+    margin-left:17px;
+}
+
+.calendar {
+    border:none;
+    background-color:#f2f2f2;
+    position:absolute;
+    left:480px;
+}
+
+.people-wrapper input {
+    width: 114px;
+}
+
+.numbers {
+    border:none;
+    background-color:#f2f2f2;
+    position:absolute;
+    width: 38px;
+    height: 38px;
+    right: 100px;
+}
+
+.plus {
+
 }
 
 .travel-item input:hover {
@@ -417,7 +449,7 @@ map {
 
 .people-wrapper {
     display: flex;
-    justify-content: space-between;
+    
     height:38px;
 }
 
@@ -426,7 +458,7 @@ map {
 }
 
 .people-wrapper input:first-child {
-    margin-left:41px;
+    
     width: 114px;
 }
 
