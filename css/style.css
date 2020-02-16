@@ -394,12 +394,12 @@ map {
 .travel-input {
     display: flex;
     align-items: center;
+    position: relative;
     margin-bottom:29px;
     height: 38px;
 }
 
 .travel-input input {
-    position: relative;
     height: 38px;
     width: 333px;
     font-weight: 700;
@@ -418,9 +418,21 @@ map {
 
 .travel-calendar {
     border:none;
-    background-color:#f2f2f2;
     position:absolute;
-    left:480px;
+    left:420px;
+    fill:#a9a9a9;
+    background-color:transparent;
+}
+
+.travel-calendar:hover,
+.travel-calendar:focus {
+    outline: none;;
+    fill:#000000;
+}
+
+.travel-calendar:active {
+    outline: none;
+    fill:#81b3d2;
 }
 
 .people-wrapper {
@@ -469,6 +481,12 @@ map {
     background: #a9a9a9;
 }
 
+.numbers:hover,
+.numbers:focus,
+.numbers:active {
+    outline:none;
+}
+
 .plus {
     position: relative;   
 }
@@ -497,9 +515,15 @@ map {
 }
 
 .travel-input input:focus {
-    outline: 0;
+    outline: none;
     background-color:#ffffff;
     border: 2px solid #e5e5e5;
+    height:34px;
+}
+
+.people-wrapper .travel-input input:focus {
+    height:34px;
+    width:34px;
 }
 
 .button-search {
@@ -521,6 +545,10 @@ map {
 .button-search:active {
     background-color:#5496bd;
     color:#ffffff4c;
+}
+
+.form-button {
+    cursor:pointer;
 }
 
 .main-footer {
@@ -592,9 +620,14 @@ map {
     opacity: 0.3;
 }
 
+.htmlacademy-logo {
+}
+
 .htmlacademy-logo:hover,
 .htmlacademy-logo:focus {
     fill:#81b3d2;
+    background-color:#669ec0;
+    color:#81b3d2;
 }
 
 .htmlacademy-logo:active {
