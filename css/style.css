@@ -167,7 +167,11 @@ a {
 .feature-item h2 {
     font-size: 21px;
     font-weight: 700;
-    
+}
+
+.real-town h2 {
+    width:125px;
+    margin-left: 77px;
 }
 
 .recommendation-list {
@@ -297,6 +301,8 @@ a {
 
 .features-item h3 {
     margin-top:0;
+    width:125px;
+    margin-left:138px;
 }
 
 .features-item:first-child p {
@@ -341,7 +347,6 @@ a {
 }
 
 .button-search-hotel {
-   
     display: block;
     width: 568px;
     height: 86px;
@@ -449,6 +454,42 @@ map {
 
 .travel-input:nth-child(2) .minus:nth-child(2) {
     margin-left: 19px;
+}
+
+.minus {
+    position: relative;
+}
+
+.minus::before {
+    content:"";
+    height: 3px; 
+    width: 11px;
+    position: absolute; 
+    right:13px;
+    background: #a9a9a9;
+}
+
+.plus {
+    position: relative;   
+}
+
+.plus::before {
+    content:"";
+    height: 11px;
+    width: 3px;
+    right:17px;
+    top:15px;
+    position: absolute ;
+    background: #a9a9a9;
+}
+
+.plus::after {
+    content:"";
+    height: 3px;
+    width: 11px;
+    right:13px;
+    position: absolute ;
+    background: #a9a9a9;
 }
 
 .travel-input input:hover {
@@ -562,7 +603,12 @@ map {
 
 .footer-htmlacademy {
     display: flex;
+    align-items: center;
     margin: 0;
+}
+
+.footer-copyright {
+    padding-right:8px;
 }
 
 .filter {
@@ -954,7 +1000,6 @@ map {
     flex-direction: column;
     justify-content: space-between;
     position:relative;
-    
 }
 
 
