@@ -386,14 +386,11 @@ map {
     z-index:1;
 }
 
-.travel-item {
-    margin:0px;
-}
-
 .travel-input {
     display: flex;
     align-items: center;
     margin-bottom:29px;
+    height: 38px;
 }
 
 .travel-input input {
@@ -408,16 +405,31 @@ map {
     text-transform: uppercase;
 }
 
-.travel-input:nth-child(2) input {
+.travel-input:nth-child(1) input {
     margin:0;
     margin-left:17px;
 }
 
-.calendar {
+.travel-calendar {
     border:none;
     background-color:#f2f2f2;
     position:absolute;
     left:480px;
+}
+
+.people-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height:38px;
+}
+
+.people-wrapper input:first-child {
+    width: 114px;
+}
+
+.people-wrapper input:nth-child(2) {
+    margin-left:27px;
+    width: 114px;
 }
 
 .people-wrapper input {
@@ -433,10 +445,6 @@ map {
     right: 100px;
 }
 
-.plus {
-
-}
-
 .travel-item input:hover {
     background-color:#ebebeb;
 }
@@ -447,26 +455,6 @@ map {
     border: 2px solid #e5e5e5;
 }
 
-.people-wrapper {
-    display: flex;
-    
-    height:38px;
-}
-
-.people-wrapper .travel-item {
-    margin:0;
-}
-
-.people-wrapper input:first-child {
-    
-    width: 114px;
-}
-
-.people-wrapper input:nth-child(2) {
-    margin-left:27px;
-    width: 114px;
-}
-
 .button-search {
     font:inherit;
     font-size: 21px;
@@ -475,7 +463,7 @@ map {
     background-color:#81b3d2;
     width: 458px;
     height:58px;
-    margin-top:54px;
+    margin-top: 10px;
     border:none;
 }
 
@@ -491,17 +479,16 @@ map {
 
 .main-footer {
     display: flex;
-    background-color:#ffffff;
+    justify-content: space-between;
     position: absolute;
     align-items:center;
     width:1200px;
-    padding-left:132px;
-    padding-right:101px;
     padding-top:22px;
     padding-bottom:22px;
     opacity: 0.9;
     left:0;
     bottom:0;
+    background-color:#ffffff;
 }
 
 .footer-contacts {
@@ -509,8 +496,8 @@ map {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    margin-right:159px;
-}
+    padding-left:132px;
+}    
 
 .footer-visit-sedona {
     margin:0;
@@ -527,7 +514,7 @@ map {
 
 .footer-social {
     width: 150px;
-    margin-right: 241px;
+    
     padding:0;
     display: flex;
     flex-wrap: wrap;
@@ -570,6 +557,7 @@ map {
 .footer-htmlacademy {
     display: flex;
     margin: 0;
+    padding-right:101px;
 }
 
 .filter {
