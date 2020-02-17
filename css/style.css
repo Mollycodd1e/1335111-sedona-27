@@ -447,7 +447,8 @@ map {
     width: 38px;
 }
 
-.people-wrapper .travel-input input {
+.travel-input .adults,
+.travel-input .childrens {
     margin:0;
     padding:0;
     text-align: center;
@@ -522,7 +523,8 @@ map {
     height:34px;
 }
 
-.people-wrapper .travel-input input:focus {
+.travel-input .adults:focus,
+.travel-input .childrens:focus {
     height:34px;
     width:34px;
 }
