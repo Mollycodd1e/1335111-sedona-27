@@ -589,7 +589,7 @@ map {
 
 .footer-social {
     width: 150px;
-    margin-right: 238px;
+    margin-right: 230px;
     padding:0;
     display: flex;
     flex-wrap: wrap;
@@ -620,6 +620,10 @@ map {
     opacity: 0.3;
 }
 
+.htmlacademy-logo {
+    fill:#231f20;
+}
+
 .htmlacademy-logo:hover,
 .htmlacademy-logo:focus {
     fill:#81b3d2;
@@ -627,10 +631,6 @@ map {
 
 .htmlacademy-logo:active {
     fill:#bdbbbc;
-}
-
-.footer-htmlacademy a:focus {
-    fill:#81b3d2;
 }
 
 .footer-htmlacademy {
@@ -700,8 +700,8 @@ map {
     padding-left:40px;
 }
 
-.infrastructure-item,
-.house-type-item {
+.infrastructure-item label, 
+.house-type-item label{
     position: relative;
     display: block;
 }
@@ -711,11 +711,11 @@ map {
     list-style:none;
 }
 
-.infrastructure-input-ckeckbox + label::before,
-.house-type-input-ckeckbox + label::before {
+.infrastructure-input-ckeckbox:not(:checked) + label::before,
+.house-type-input-ckeckbox:not(:checked) + label::before {
     content:"";
     position: absolute;
-    left:0;
+    left:-40px;
     top:0;
     width: 23px;
     height: 23px;
@@ -726,14 +726,14 @@ map {
 }
 
 .infrastructure-input-ckeckbox:checked + label::after,
-.house-type-input-ckeckbox:checked + label::after {
+.house-type-input-ckeckbox:checked +label::after {
     content:"";
     position: absolute;
-    left:0;
+    left:-40px;
     top:0;
     width: 27px;
     height: 23px;
-
+    
     background-image: url("../img/checkbox-on.png");
     background-repeat: no-repeat;
     background-position:0 0;
