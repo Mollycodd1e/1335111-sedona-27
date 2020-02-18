@@ -13,22 +13,22 @@ body {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin:-1px;
-border: 0;
-padding: 0;
-white-space:nowrap;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow:hidden;background-position: 0 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin:-1px;
+    border: 0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;background-position: 0 0;
 }
     
 .site {
+    position: relative;
     width:1200px;
     margin:0 auto;
-    position: relative;
     background-color: #ffffff;
     box-shadow: 0px 0 15px 5px rgba(0,0,0,0.2);
 }
@@ -45,22 +45,21 @@ a {
 
 .main-header-logo {
     display:block;
+    position: absolute;  
     left:50%;
     margin-left:-70px;
-    position: absolute;  
     z-index: 1;  
 }
 
 .site-navigation {
+    display:flex;  
+    list-style:none; 
     padding:0;
     margin:0;
-    width:1056px;
-    list-style:none;
-    text-align: center;
-    display:flex;
     padding-left:72px;
     padding-right:72px;
-    
+    width:1056px;
+    text-align: center; 
 }
 
 .site-navigation li{
@@ -101,13 +100,13 @@ a {
 }
 
 .background {
+    position: relative;
     min-height: 508px;
     background-color:#8eb4d2;
     background-image:url('../img/background-photo.jpg');
     background-repeat: no-repeat;
     background-position:center 28%;
     background-size: 1200px 800px;
-    position: relative;
 }
 
 .welcome {
@@ -121,12 +120,12 @@ a {
 
 .background::after {
     content:"";
+    position: absolute;
     left:-2px;
     bottom:-2px;
-    background-image:url('../img/polygon.png');
     width:1203px;
     height: 59px;
-    position: absolute;
+    background-image:url('../img/polygon.png');
     background-repeat: no-repeat;   
 }
 
@@ -160,9 +159,9 @@ a {
     padding-top:46px;
     padding-left:60px;
     padding-right:60px;
+    padding-bottom:10px;
     text-align: center;
     color:#ffffff;
-    padding-bottom:10px;
 }
 
 .feature-item h2 {
@@ -183,10 +182,10 @@ a {
     padding: 0;
 }
 
-.recommendation-item {
-    text-align: center;  
+.recommendation-item {  
     width: 400px;
     padding-bottom:10px;
+    text-align: center;
 }
 
 .recommendation-item h3,
@@ -240,8 +239,8 @@ a {
 
 .recommendation-item h3::before {
     content:"";
-    left:50%;
     position: absolute;
+    left:50%;
     background-repeat: no-repeat;
     background-position: 0;
 }
@@ -282,16 +281,16 @@ a {
 
 .features { 
     min-height: 246px;
-    background-color:#eeeeee;
     padding-bottom:10px;
+    background-color:#eeeeee;
 }
 
 .features-list {
     display:flex; 
     justify-content: space-between;
+    list-style:none;
     margin: 0;
     padding:0;
-    list-style:none;
 }
 
 .features-item {
@@ -382,11 +381,11 @@ map {
 }
 
 .travel-form {   
+    position: absolute;
     padding-top:55px;   
     padding-left:55px;
     padding-right:55px;
     padding-bottom:55px;
-    position: absolute;
     font-weight: 700;
     background-color: #ffffff;
     z-index:1;
@@ -423,6 +422,8 @@ map {
 .travel-calendar {
     border:none;
     position:absolute;
+    width:21px;
+    height:22px;
     left:420px;
     fill:#a9a9a9;
     background-color:transparent;
@@ -458,9 +459,9 @@ map {
 
 .travel-input input:focus {
     outline: none;
+    height:34px;
     background-color:#ffffff;
     border: 2px solid #e5e5e5;
-    height:34px;
 }
 
 .travel-input .adults:focus,
@@ -469,11 +470,11 @@ map {
 }
 
 .numbers {
-    border:none;
-    background-color:#f2f2f2;
     width: 38px;
     height: 38px;
     padding: 0;
+    background-color:#f2f2f2;
+    border:none;
 }
 
 .numbers:hover,
@@ -496,9 +497,9 @@ map {
 
 .minus::before {
     content:"";
+    position: absolute; 
     height: 3px; 
     width: 11px;
-    position: absolute; 
     right:13px;
     background-color: #a9a9a9;
 }
@@ -509,21 +510,21 @@ map {
 
 .plus::before {
     content:"";
+    position: absolute ;
     height: 11px;
     width: 3px;
     right:17px;
     top:15px;
-    position: absolute ;
-    background: #a9a9a9;
+    background-color: #a9a9a9;
 }
 
 .plus::after {
     content:"";
+    position: absolute ;
     height: 3px;
     width: 11px;
     right:13px;
-    position: absolute ;
-    background: #a9a9a9;
+    background-color: #a9a9a9;
 }
 
 .minus:hover::before,
@@ -543,12 +544,12 @@ map {
 
 .button-search {
     font:inherit;
-    font-size: 21px;
-    color:#ffffff;
-    vertical-align: middle;
-    background-color:#81b3d2;
     width: 458px;
     height:58px;
+    font-size: 21px;
+    vertical-align: middle;
+    background-color:#81b3d2;
+    color:#ffffff;
     border:none;
 }
 
@@ -603,13 +604,13 @@ map {
 }
 
 .footer-social {
-    width: 150px;
-    margin-right: 230px;
-    padding:0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style:none;
+    width: 150px;
+    margin-right: 230px;
+    padding:0;
 }
 
 .social-button {
@@ -659,13 +660,13 @@ map {
 }
 
 .filter {
+    position: relative;
     min-height:217px;
     background-color:#8eb4d2;
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
     background-size: 1200px 800px;
     background-position: 0 50%;
-    position: relative;
 }
 
 .filter-form {
