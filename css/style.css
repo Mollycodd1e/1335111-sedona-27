@@ -53,6 +53,7 @@ a {
 
 .site-navigation {
     display:flex;  
+    flex-wrap:wrap;
     list-style:none; 
     padding:0;
     margin:0;
@@ -132,8 +133,10 @@ a {
 .description {
     line-height: 26px;
     padding-top: 60px;
-    padding-left:355px;
-    padding-right:356px;
+    padding-left:347px;
+    padding-right:343px;
+    width:510px;
+    letter-spacing:0.10px;
     text-align: center;
 }
 
@@ -141,12 +144,13 @@ a {
     font-size: 21px;
     font-weight: 700;
     margin:0;
-    margin-bottom:28px;
+    margin-bottom:29px;
 }
 
 .description-reasons {
     margin:0;
-    margin-bottom:50px;
+    letter-spacing:0.10px;
+    margin-bottom:51px;
     color:#333333;
 }
 
@@ -385,7 +389,7 @@ map {
     padding-top:55px;   
     padding-left:55px;
     padding-right:55px;
-    padding-bottom:55px;
+    padding-bottom:50px;
     font-weight: 700;
     background-color: #ffffff;
     z-index:1;
@@ -393,6 +397,7 @@ map {
 
 .travel-input {
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     position: relative;
     margin-bottom:29px;
@@ -404,7 +409,7 @@ map {
     width: 333px;
     font-weight: 700;
     padding-left:13px;
-    flex-grow:1;
+    margin-left:50px;
     border:none;
     background-color:#f2f2f2;
     text-transform: uppercase;
@@ -449,6 +454,7 @@ map {
 .people-wrapper input {
     position:relative;
     width: 38px;
+    margin:0;
     padding: 0;
     text-align: center;
 }
@@ -460,6 +466,7 @@ map {
 .travel-input input:focus {
     outline: none;
     height:34px;
+    padding-left:11px;
     background-color:#ffffff;
     border: 2px solid #e5e5e5;
 }
