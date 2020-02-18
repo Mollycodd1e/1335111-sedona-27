@@ -60,7 +60,6 @@ a {
     padding-left:72px;
     padding-right:72px;
     width:1056px;
-    text-align: center; 
 }
 
 .site-navigation li{
@@ -81,6 +80,11 @@ a {
 .site-navigation li:last-child,
 .site-navigation li:nth-child(3) {
     text-align:right;
+}
+
+.site-navigation li:nth-child(3) {
+    padding-right:5px;
+    width:234px;
 }
 
 .site-navigation a {
@@ -133,23 +137,26 @@ a {
 .description {
     line-height: 26px;
     padding-top: 60px;
-    padding-left:347px;
-    padding-right:343px;
-    width:510px;
+    padding-left:354px;
+    padding-right:355px;
+    width:491px;
     letter-spacing:0.10px;
     text-align: center;
 }
 
 .description-sedona {
+    padding-left:26px;
+    padding-right:25px;
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 700; 
+    text-align:center;
     margin:0;
-    margin-bottom:29px;
+    margin-bottom:28px;
 }
 
 .description-reasons {
     margin:0;
-    letter-spacing:0.10px;
+    text-align: justify;
     margin-bottom:51px;
     color:#333333;
 }
@@ -163,12 +170,19 @@ a {
     padding-top:46px;
     padding-left:60px;
     padding-right:60px;
-    padding-bottom:10px;
+    padding-bottom:54px;
     text-align: center;
     color:#ffffff;
 }
 
+.feature-item p {
+    margin-bottom:0px;
+    margin-top:20px;
+}
+
 .feature-item h2 {
+    margin:0px;
+    margin-bottom:24px;
     font-size: 21px;
     font-weight: 700;
 }
@@ -192,53 +206,48 @@ a {
     text-align: center;
 }
 
-.recommendation-item h3,
-.features-item h3 {
+.recommendation-item h3 {
+    position: relative;  
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 700;  
+    padding: 0;
+    margin: 0;
+    padding-top: 161px; 
+    text-align: justify;
 }
 
 .recommendation-item:first-child p {
     margin-left: 73px; 
     margin-right: 75px; 
-    margin-top:21px;
+    margin-top:23px;
     color:#333333;
 }
 
 .recommendation-item:nth-child(2) p {
     margin-left: 56px; 
     margin-right: 56px; 
-    margin-top:21px;
+    margin-top:23px;
     color:#333333;
 }
 
 .recommendation-item:last-child p {
     margin-left: 64px; 
     margin-right: 63px; 
-    margin-top:21px;
+    margin-top:23px;
     color:#333333;
 }
 
 .recommendation-item:first-child h3 {
-    position: relative;   
-    padding: 0;
-    margin: 0;
-    padding-top: 161px;  
+    padding-left:165px;
 }
 
 .recommendation-item:nth-child(2) h3 {
-    position: relative;   
-    padding: 0;
-    margin: 0;
-    padding-top: 161px;  
+    padding-left:181px;
 }
 
 
 .recommendation-item:last-child h3 {
-    position: relative;  
-    padding: 0;
-    margin: 0;
-    padding-top: 161px;  
+   padding-left:149px; 
 }
 
 .recommendation-item h3::before {
@@ -252,29 +261,29 @@ a {
 .recommendation-item:first-child h3::before {
     width: 75px;
     height: 72px;
-    bottom:49px;
-    margin-left:-37px;
+    bottom:50px;
+    margin-left:-38px;
     background-image: url("../img/icon-1.svg");
 }
 
 .recommendation-item:nth-child(2) h3::before {
     width: 74px;
     height: 70px;
-    bottom:49px;
-    margin-left:-36px;
+    bottom:51px;
+    margin-left:-37px;
     background-image: url("../img/icon-2.svg");
 }
 
 .recommendation-item:last-child h3::before {
     width: 64px;
     height: 76px;
-    bottom:48px;
-    margin-left:-38px;
+    bottom:50px;
+    margin-left:-33px;
     background-image: url("../img/icon-3.svg");
 }
 
 .devils-bridge .feature-item {
-    padding-top:49px;
+    padding-top:45px;
     padding-left:48px;
     padding-right:49px;
     margin: 0 auto;
@@ -297,31 +306,38 @@ a {
     padding:0;
 }
 
-.features-item {
-    margin-top: 50px;
+.features-item {  
+    
+    padding: 0;
+    margin: 0;
+    padding-top: 46px;
     width: 400px;
     text-align: center;
 }
 
 .features-item h3 {
+    font-size: 21px;
+    font-weight: 700;  
     margin-top:0;
-    width:125px;
-    margin-left:138px;
+    margin-bottom:24px;
 }
 
-.features-item:first-child p {
-    margin-left: 95px;
-    margin-right: 97px;
+.features-item:first-child {
+    width:208px;
+    padding-left:95px;
+    padding-right:97px;
     margin-bottom:0;
+    text-align: center;
 }
 
-.features-item:nth-child(2) p {
-    margin-left: 69px;
-    margin-right: 69px;
+.features-item:nth-child(2) {
+    padding-left:69px;
+    padding-right:69px;
     margin-bottom:0;
 }
 
 .features-item:last-child p {
+    margin-top: 21px;
     margin-left: 77px;
     margin-right: 74px;
     margin-bottom:0;
