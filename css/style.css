@@ -489,7 +489,7 @@ map {
 }
 
 .minus::before {
-    content:"";
+    content:"+";
     height: 3px; 
     width: 11px;
     position: absolute; 
