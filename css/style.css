@@ -497,10 +497,21 @@ map {
     background: #a9a9a9;
 }
 
+.minus::before:hover,
+.minus::before:focus {
+    content:"";
+    height: 3px; 
+    width: 11px;
+    position: absolute; 
+    right:13px;
+    background: #000000;
+}
+
 .numbers:hover,
 .numbers:focus,
 .numbers:active {
     outline:none;
+    background-color: #000000;
 }
 
 .plus {
