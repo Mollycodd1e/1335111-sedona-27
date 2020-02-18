@@ -476,6 +476,12 @@ map {
     padding: 0;
 }
 
+.numbers:hover,
+.numbers:focus,
+.numbers:active {
+    outline:none;
+}
+
 .travel-input .minus {
     margin-left: 33px;
 }
@@ -489,18 +495,12 @@ map {
 }
 
 .minus::before {
-    content:"+";
+    content:"";
     height: 3px; 
     width: 11px;
     position: absolute; 
     right:13px;
-    background: #a9a9a9;
-}
-
-.numbers:hover,
-.numbers:focus,
-.numbers:active {
-    outline:none;
+    background-color: #a9a9a9;
 }
 
 .plus {
@@ -524,6 +524,21 @@ map {
     right:13px;
     position: absolute ;
     background: #a9a9a9;
+}
+
+.minus:hover::before,
+.minus:focus::before,
+.plus:hover::before,
+.plus:hover::after,
+.plus:focus::before,
+.plus:focus::after {
+    background-color:#000000;
+}
+
+.minus:active::before,
+.plus:active::before,
+.plus:active::after {
+    background-color:#81b3d2;
 }
 
 .button-search {
