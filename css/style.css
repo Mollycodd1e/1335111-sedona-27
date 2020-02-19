@@ -307,7 +307,6 @@ a {
 }
 
 .features-item {  
-    
     padding: 0;
     margin: 0;
     padding-top: 46px;
@@ -322,25 +321,55 @@ a {
     margin-bottom:24px;
 }
 
-.features-item:first-child {
+.features-item {
     width:208px;
+    min-height: 143px;
     padding-left:95px;
     padding-right:97px;
     margin-bottom:0;
     text-align: center;
 }
 
-.features-item:nth-child(2) {
-    padding-left:69px;
-    padding-right:69px;
-    margin-bottom:0;
+.features-item:first-child p {
+    margin-top:20px;
+}
+
+.features-item:nth-child(2) p {
+    margin-top:20px;
 }
 
 .features-item:last-child p {
-    margin-top: 21px;
-    margin-left: 77px;
-    margin-right: 74px;
+    margin-top:20px;
+    text-align: center;
+}
+
+.features-item:nth-child(2) {
+    width:262px;
+    padding-left:69px;
+    padding-right:69px;
     margin-bottom:0;
+    text-align: center;
+}
+
+.features-item:nth-child(2) h3 {
+    width:100px;
+    margin:0px;
+    margin-bottom:24px;
+    padding-left: 80px;
+}    
+
+.features-item:nth-child(3) {
+    width:250px;
+    margin:0px;
+    padding-left:75px;
+    padding-right:75px;
+    text-align: center;
+}
+
+.features-item:nth-child(3) h3 {
+    width:100px;
+    margin-bottom:24px;
+    padding-left: 73px;
 }
 
 .interested-wrapper {
@@ -402,18 +431,21 @@ map {
 
 .travel-form {   
     position: absolute;
-    padding-top:55px;   
+    padding-top:52px;   
     padding-left:55px;
     padding-right:55px;
-    padding-bottom:50px;
+    padding-bottom:55px;
     font-weight: 700;
     background-color: #ffffff;
     z-index:1;
 }
 
+.travel-input label {
+ letter-spacing: 0.2px;
+}
+
 .travel-input {
     display: flex;
-    box-sizing: border-box;
     align-items: center;
     position: relative;
     margin-bottom:29px;
@@ -421,9 +453,11 @@ map {
 }
 
 .travel-input input {
+    position: relative;
     height: 38px;
     width: 333px;
     font-weight: 700;
+    padding:0;
     padding-left:13px;
     margin-left:50px;
     border:none;
@@ -433,11 +467,11 @@ map {
 
 .travel-input .arrivaldate {
     margin:0;
-    margin-left:17px;
+    margin-left:19px;
 }
 
 .travel-input .departuredate {
-    margin-left:13px;
+    margin-left:15px;
 }
 
 .travel-calendar {
@@ -464,7 +498,7 @@ map {
 .people-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 
 .people-wrapper input {
@@ -487,8 +521,8 @@ map {
     border: 2px solid #e5e5e5;
 }
 
-.travel-input .adults:focus,
-.travel-input .childrens:focus {
+.people-wrapper input:focus {
+    padding:0px;
     width:34px;
 }
 
@@ -507,11 +541,11 @@ map {
 }
 
 .travel-input .minus {
-    margin-left: 33px;
+    margin-left: 36px;
 }
 
 .travel-input:nth-child(2) .minus:nth-child(2) {
-    margin-left: 19px;
+    margin-left: 25px;
 }
 
 .minus {
@@ -570,6 +604,7 @@ map {
     width: 458px;
     height:58px;
     font-size: 21px;
+    text-transform: uppercase;
     vertical-align: middle;
     background-color:#81b3d2;
     color:#ffffff;
@@ -592,14 +627,15 @@ map {
 
 .main-footer {
     display: flex;
+    box-sizing: border-box;
     background-color:#ffffff;
     position: absolute;
     align-items:center;
-    width:967px;
+    width: 1200px;
     padding-left:132px;
     padding-right:101px;
-    padding-top:22px;
-    padding-bottom:22px;
+    padding-top:29px;
+    padding-bottom:29px;
     opacity: 0.9;
     left:0;
     bottom:0;
@@ -611,6 +647,7 @@ map {
     font-weight: 700;
     line-height: 26px;
     margin-right:159px;
+    text-align: justify;
 }
 
 .footer-visit-sedona {
@@ -632,6 +669,7 @@ map {
     justify-content: space-between;
     list-style:none;
     width: 150px;
+    margin:0;
     margin-right: 230px;
     padding:0;
 }
