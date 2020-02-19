@@ -380,7 +380,7 @@ a {
     line-height: 24px;
     margin-top:50px;
     padding-bottom:3px;
-    margin-bottom: 45px;
+    margin-bottom: 41px;
     text-align: center;
     color:#333333;  
 }
@@ -433,7 +433,7 @@ map {
 
 .travel-form {   
     position: absolute;
-    padding-top:52px;   
+    padding-top:56px;   
     padding-left:55px;
     padding-right:55px;
     padding-bottom:55px;
@@ -634,8 +634,8 @@ map {
     position: absolute;
     align-items:center;
     width: 1200px;
-    padding-left:132px;
-    padding-right:101px;
+    padding-left:122px;
+    padding-right:93px;
     padding-top:29px;
     padding-bottom:29px;
     opacity: 0.9;
@@ -644,17 +644,16 @@ map {
 }
 
 .footer-contacts {
-    width: 223px;
+    width: 224px;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    margin-right:159px;
     text-align: justify;
 }
 
 .footer-visit-sedona {
     margin:0;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .footer-contacts a {  
@@ -662,7 +661,9 @@ map {
 }
 
 .footer-telefon {
+    
     margin:0;
+    margin-bottom:2px;
 }
 
 .footer-social {
@@ -672,7 +673,7 @@ map {
     list-style:none;
     width: 150px;
     margin:0;
-    margin-right: 230px;
+    margin-left:179px;
     padding:0;
 }
 
@@ -716,10 +717,11 @@ map {
     display: flex;
     align-items: center;
     margin: 0;
+    margin-left: 228px;
 }
 
 .footer-copyright {
-    padding-right:8px;
+    padding-right:6px;
 }
 
 .filter {
