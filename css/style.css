@@ -75,6 +75,7 @@ a {
 
 .site-navigation li:nth-child(2) {
     margin-right: 100px;
+    
 }
 
 .site-navigation li:last-child,
@@ -85,6 +86,7 @@ a {
 .site-navigation li:nth-child(3) {
     padding-right:5px;
     width:234px;
+   
 }
 
 .site-navigation a {
