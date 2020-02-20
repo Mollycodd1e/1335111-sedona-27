@@ -1184,10 +1184,3 @@ map {
     color:#857871;
     background-color:#503e33;
 }
-
-.inner-footer {
-    display: flex;
-    background-color:#ffffff;
-    opacity: 0.9;
-    padding-top:36px;
-}
