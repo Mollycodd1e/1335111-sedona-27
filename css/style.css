@@ -960,19 +960,16 @@ map {
     color:#6a6a6a;
 }
 
-.container {
-    width:1055px;
-    margin: 0 auto;
-}
-
 .found {
     display:flex;
     justify-content: space-between;
+    border-bottom:1px solid #6a6a6a;
 }
 
 .found-title {
     margin-top:33px;
-    margin-bottom:30px;    
+    margin-bottom:30px;  
+    margin-left: 72px;  
     font-size:21px;
     line-height: 26px;
     font-weight: 700;
@@ -1010,6 +1007,7 @@ map {
 
 .found-sort-list {
     display: flex;
+    margin-right:73px;
     padding: 0;
     margin-top:40px;
     margin-bottom:36px;
@@ -1101,36 +1099,30 @@ map {
     padding:0;
     list-style:none;
 }
+
 .hotel-item {
     display: flex;
+    justify-content: space-between;
+    padding-left:72px;
+    padding-right:72px;
     padding-top:30px;
     padding-bottom:30px;
-    border:1px solid #e5e5e5;
-    border-left:none;
-    border-right:none;
-}
-
-.hotel-type {
-    text-align: left;
-    color:#333333;
-}
-
-.hotel-info .hotel-type-span:nth-child(1) {
-    margin-right:39px;
+    border-bottom:1px solid #6a6a6a;
 }
 
 .hotel-info {
+    padding:0;
     margin-left:30px;
-    margin-right:540px;
+    margin-right:470px;
 }
 
 .hotel-info h3 {
     margin:0;
     padding:0;
-    margin-bottom:6px;
     font-size:21px;
     font-weight: 700;
     line-height: 26px;
+    margin-bottom:6px;
     color:#000000;
 }
 
@@ -1145,43 +1137,24 @@ map {
 }
 
 .hotel-type {
-    margin-bottom:16px;
+    margin-bottom:10px;
+    text-align: left;
+    color:#333333;
 }
 
-.hotel-raiting {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position:relative;
+.stars {
+    background-image:url('../img/star.svg');
+    background-color:#81b3d2;
+    background-repeat:repeat;
+    background-position:0 0;
+    background-size:18px 17px;
 }
-
-
-.hotel-item .hotel-raiting::before {
-    content:"";
-    
-    position:absolute;
-    width:74px;
-    height: 17px;
-    background-image: url("../img/star.svg");
-    background-repeat:repeat-x;
-    right:100%;
-
-}
-
-.hotel-item:nth-child(2) .hotel-raiting::before {
-    width:54px;
-}
-
-.hotel-item:last-child .hotel-raiting::before {
-    width:36px;
-}
-
 .button-info {
     padding-left:17px;
     padding-right:17px;
     padding-top:6px;
     padding-bottom:5px;
-    margin:6px;
+    margin-right:6px;
     width: 110px;
     height: 27px;
     font-size: 14px;
@@ -1197,7 +1170,7 @@ map {
 }
 
 .button-info:active {
-    color:#857871;
+    color:#88b6d1;
     background-color:#5496bd;
 }
 
@@ -1205,7 +1178,7 @@ map {
     padding-left:16px;
     padding-right:16px;
     padding-top:6px;
-    padding-bottom:6px;
+    padding-bottom:5px;
     width: 142px;
     height: 27px;
     font-size:14px;
