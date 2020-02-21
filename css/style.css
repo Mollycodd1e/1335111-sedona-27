@@ -122,7 +122,6 @@ a {
     padding-top:77px;
     width:459px;
     min-height:353px;
-    
 }
 
 .background::after {
@@ -1001,13 +1000,14 @@ map {
     padding:0;
     cursor: pointer;
 }
+
 .found-filter-list li {
    margin-right:33px;
 }
 
 .found-sort-list {
     display: flex;
-    margin-right:73px;
+    margin-right:65px;
     padding: 0;
     margin-top:40px;
     margin-bottom:36px;
@@ -1056,42 +1056,51 @@ map {
     border:none;
 }
 
+.found-button-down,
 .found-button-up {
+    outline:none;
     position:relative;
-    widows: 20px;
+    width: 20px;
     height: 20px;
     border:none;
     background-color: #ffffff;
-}
-
-.found-button-down {
-    position:relative;
-    widows: 20px;
-    height: 20px;
-    border:none;
-    background-color: #ffffff;
+    cursor: pointer;
 }
 
 .found-button-up::before {
     content:"";
     position:absolute;
-    top:-10px;
-    left:50%;
-    left:-10px;
+    top:-1px;
+    left:-1px;
     border: 6px solid transparent;
     border-bottom: 11px solid #b2b2b2;
 }
 
-.found-button-up:hover,
-.found-button-down:hover,
-.found-button-up:focus,
-.found-button-down:focus {
-    fill:#000000;
+.found-button-down::before {
+    content:"";
+    position:absolute;
+    top:5px;
+    left:1px;
+    border: 6px solid transparent;
+    border-top: 11px solid #81b3d2;
 }
 
-.found-button-up:active,
-.found-button-down:active {
-    color:#81b3d2;
+.found-button-down:focus::before,
+.found-button-down:hover::before {
+    border-top: 11px solid #000000;
+}
+
+.found-button-up:hover::before,
+.found-button-up:focus::before {
+    border-bottom: 11px solid #000000;
+}
+
+.found-button-up:active::before {
+    border-bottom: 11px solid #81b3d2;
+}
+
+.found-button-down:active::before {
+    border-top: 11px solid #81b3d2;
 }
 
 .hotel-list {
@@ -1113,7 +1122,7 @@ map {
 .hotel-info {
     padding:0;
     margin-left:30px;
-    margin-right:470px;
+    margin-right:auto;
 }
 
 .hotel-info h3 {
@@ -1143,12 +1152,32 @@ map {
 }
 
 .stars {
+    display:block;
+    margin-left:auto;
+    width:89px;
+    height:17px;
     background-image:url('../img/star.svg');
-    background-color:#81b3d2;
-    background-repeat:repeat;
-    background-position:0 0;
+    background-repeat:space;
     background-size:18px 17px;
 }
+
+.hotel-item:nth-child(2) .stars {
+    width:66px;
+}
+
+.hotel-item:last-child .stars {
+    width:42px;
+}
+
+.raiting {
+    margin:0px;
+    margin-top:52px;
+    width:110px;
+    text-align: center;
+    color:#666666;
+    background-color:#f2f2f2;
+} 
+
 .button-info {
     padding-left:17px;
     padding-right:17px;
@@ -1196,4 +1225,8 @@ map {
 .button-reserve:active {
     color:#857871;
     background-color:#503e33;
+}
+
+.inner-footer {
+    position: relative;
 }
