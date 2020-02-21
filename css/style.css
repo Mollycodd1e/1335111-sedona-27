@@ -661,7 +661,6 @@ map {
 }
 
 .footer-telefon {
-    
     margin:0;
     margin-bottom:2px;
 }
@@ -961,62 +960,87 @@ map {
     color:#6a6a6a;
 }
 
+.container {
+    width:1055px;
+    margin: 0 auto;
+}
+
+.found {
+    display:flex;
+    justify-content: space-between;
+}
+
 .found-title {
-    display: inline-block;
-    margin:0;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin-top:33px;
+    margin-bottom:30px;    
     font-size:21px;
     line-height: 26px;
     font-weight: 700;
 }
 
-.found {
-    display: inline-flex;
-}
 .found-filter {
     display: flex;
+    align-items: center;
     font-size:12px;
     line-height:18px;
+    margin-right:auto;
 }
 
 .found-filter p {
     margin-left:49px;
-    margin-top: 15px;
 }
 
 .found-filter-list {
     display: flex;
+    align-items: center;
     list-style:none;
     margin:0;
-    padding:0;  
-    margin-top:15px;
     margin-right: 33px;
     font-size:12px;
     line-height:18px;
 }
 
+.found-filter-list button {
+    padding:0;
+    cursor: pointer;
+}
 .found-filter-list li {
-    margin-right: 33px;
+   margin-right:33px;
 }
 
-.found-filter-list li:last-child {
-    margin-right:580px;
-}
 .found-sort-list {
     display: flex;
+    padding: 0;
+    margin-top:40px;
+    margin-bottom:36px;
     list-style:none;
 }
 
-.found-button-price {
-    color:#81b3d2;
+.found-button {
+    font:inherit;
+    text-transform: uppercase;
+    background-color:transparent;
     border:none;
+}
+
+.found-button-price {
+    font:inherit;
+    width:49px;
+    color:#81b3d2;
+}
+
+.found-button-type {
+    width:49px;  
+}
+
+.found-button-raiting {
+    width:76px;
 }
 
 .found-button-type,
 .found-button-raiting {
+    padding:0;
     color:#b2b2b2;
-    border:none;
     border-bottom:1px dotted #81b3d2;
 }
 
@@ -1034,11 +1058,31 @@ map {
     border:none;
 }
 
-.found-button-up,
+.found-button-up {
+    position:relative;
+    widows: 20px;
+    height: 20px;
+    border:none;
+    background-color: #ffffff;
+}
+
 .found-button-down {
     position:relative;
-    width:11px;
-    height:10px;
+    widows: 20px;
+    height: 20px;
+    border:none;
+    background-color: #ffffff;
+}
+
+.found-button-up::before {
+    content:"";
+    position:absolute;
+    top:-10px;
+    left:50%;
+    left:-10px;
+    border: 6px solid transparent;
+    border-bottom: 11px solid #b2b2b2;
+    
 }
 
 .found-button-up:hover,
@@ -1069,7 +1113,6 @@ map {
 }
 .hotel-item {
     display: flex;
-    padding-left:72px;  
     padding-top:30px;
     padding-bottom:30px;
     border:1px solid #e5e5e5;

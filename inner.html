@@ -65,9 +65,10 @@
           <div class="filter-range-title">Стоимость в сутки (р):</div>
             <div class="price-control">
               <label class="min-price">
-                от <input type="number" name="min-price" value="0">
+                от <input type="text" name="min-price" value="0">
               </label>
-              <label class="max-price">до <input type="number" name="max-price" value="3000">
+              <label class="max-price">
+                до <input type="text" name="max-price" value="3000">
               </label>
             </div>
             <div class="range-control">
@@ -84,6 +85,7 @@
         </div>
         </form>
       </section>
+      <div class="container">
       <section class="found">
         <p class="found-title">
           Найдено:3
@@ -94,23 +96,23 @@
           </p>
           <ul class="found-filter-list">
            <li>
-            <button class="found-button-price" type="button">По цене</button>
+            <button class="found-button-price found-button" type="button">По цене</button>
            </li>
            <li>
-            <button class="found-button-type" type="button">По типу</button>
+            <button class="found-button-type found-button" type="button">По типу</button>
            </li>
            <li>
-            <button class="found-button-raiting" type="button">По рейтингу</button>
+            <button class="found-button-raiting found-button" type="button">По рейтингу</button>
            </li>
           </ul>
         </div>
         <div>
           <ul class="found-sort-list">
             <li>
-              <button class="found-button-up" type="button"> </button>
+              <button class="found-button-up" type="button"></button>
             </li>
             <li>
-              <button class="found-button-down" type="button"> </button>
+              <button class="found-button-down" type="button"></button>
             </li>
           </ul>
         </div>
@@ -186,6 +188,7 @@
           </li>
         </ul>
       </section>
+     </div> 
     </main>
     <footer class="main-footer">
       <div class="footer-contacts">
