@@ -818,6 +818,35 @@ map {
     background-position:0 0;
 }
 
+.infrastructure-input-ckeckbox:not(:checked):disabled + label::before,
+.house-type-input-ckeckbox:not(:checked):disabled + label::before {
+    content:"";
+    position: absolute;
+    left:-40px;
+    top:0;
+    width: 23px;
+    height: 23px;
+  
+    background-image: url("../img/checkbox-off-2.png");
+    background-repeat: no-repeat;
+    background-position:0 0;
+}
+
+.infrastructure-input-ckeckbox:checked:disabled + label::after,
+.house-type-input-ckeckbox:checked:disabled +label::after {
+    content:"";
+    position: absolute;
+    left:-40px;
+    top:0;
+    width: 27px;
+    height: 23px;
+    
+    background-image: url("../img/checkbox-on-2.png");
+    background-repeat: no-repeat;
+    background-position:0 0;
+}
+
+
 .filter-range {
     width: 330px;
     color: #ffffff;
@@ -906,8 +935,22 @@ map {
     width: 4px;
     height: 4px;
   
-    background: #ababab;
+    background-color: #ababab;
     border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+  
+    background-color: #ababab;
+    border: 9px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
@@ -919,10 +962,6 @@ map {
   
 .range-toggle-max {
     left: 80%;
-}
-
-.range-toggle:hover {
-    background: #1c4f80;
 }
 
 .show-button {
@@ -962,7 +1001,7 @@ map {
 .found {
     display:flex;
     justify-content: space-between;
-    border-bottom:1px solid #6a6a6a;
+    border-bottom:1px solid #e5e5e5;
 }
 
 .found-title {
@@ -991,6 +1030,8 @@ map {
     align-items: center;
     list-style:none;
     margin:0;
+    padding:0;
+    margin-left: 40px;
     margin-right: 33px;
     font-size:12px;
     line-height:18px;
@@ -1001,8 +1042,9 @@ map {
     cursor: pointer;
 }
 
-.found-filter-list li {
-   margin-right:33px;
+.found-filter-list li:nth-child(2),
+.found-filter-list li:last-child {
+   margin-left:33px;
 }
 
 .found-sort-list {
@@ -1085,11 +1127,6 @@ map {
     border-top: 11px solid #81b3d2;
 }
 
-.found-button-down:focus::before,
-.found-button-down:hover::before {
-    border-top: 11px solid #000000;
-}
-
 .found-button-up:hover::before,
 .found-button-up:focus::before {
     border-bottom: 11px solid #000000;
@@ -1097,10 +1134,6 @@ map {
 
 .found-button-up:active::before {
     border-bottom: 11px solid #81b3d2;
-}
-
-.found-button-down:active::before {
-    border-top: 11px solid #81b3d2;
 }
 
 .hotel-list {
@@ -1111,18 +1144,16 @@ map {
 
 .hotel-item {
     display: flex;
-    justify-content: space-between;
     padding-left:72px;
     padding-right:72px;
     padding-top:30px;
     padding-bottom:30px;
-    border-bottom:1px solid #6a6a6a;
+    border-bottom:1px solid #e5e5e5;
 }
 
 .hotel-info {
     padding:0;
     margin-left:30px;
-    margin-right:auto;
 }
 
 .hotel-info h3 {
@@ -1167,6 +1198,10 @@ map {
 
 .hotel-item:last-child .stars {
     width:42px;
+}
+
+.hotel-raiting {
+    margin-left:auto;
 }
 
 .raiting {
