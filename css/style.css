@@ -1025,7 +1025,6 @@ map {
     font-size:12px;
     line-height:18px;
     margin-left:49px;
-    margin-right: auto;
 }
 
 .found-filter-list {
@@ -1047,6 +1046,10 @@ map {
 .found-filter-list li:nth-child(2),
 .found-filter-list li:last-child {
    margin-left:33px;
+}
+
+.found-sort {
+    margin-left:auto;
 }
 
 .found-sort-list {
