@@ -734,7 +734,7 @@ map {
 
 .filter-form {
     display: flex;
-    margin-right:74px;
+    margin-right:72px;
     margin-left:72px;
     padding-top:26px;
     text-align: left;
@@ -765,18 +765,19 @@ map {
     color:#ffffff;
 }
 
-.filter-form .infrastructure {
-    margin-right:115px;
-}
-
 .filter-form .house-type {
-    margin-right:350px;
+    margin-left:118px;
 }
 
 .infrastructure-item,
 .house-type-item {
-    margin-bottom:23px;
+    margin-bottom:27px;
     padding-left:40px;
+}
+
+.infrastructure-item:nth-child(2),
+.house-type-item:nth-child(2) {
+    margin-bottom:26px;
 }
 
 .infrastructure-item label, 
@@ -849,6 +850,7 @@ map {
 
 .filter-range {
     width: 330px;
+    margin-left:349px;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -856,13 +858,13 @@ map {
 .filter-range-title {
     font-weight: 700;
     font-size:16px;
-    margin-bottom: 9px;
+    margin-bottom: 13px;
 }
 
 .price-control {
     position: relative;
 
-    height: 36px;
+    height: 32px;
     margin-bottom: 20px;
   
     font-size: 0;
@@ -906,6 +908,7 @@ map {
   
     color: inherit;
     font: inherit;
+
   
     background: none;
     border: none;
@@ -1002,13 +1005,15 @@ map {
     display:flex;
     justify-content: space-between;
     padding-left:72px;
-    padding-right: 72px;
+    padding-right:65px;
+    padding-top:23px;
+    padding-bottom:21px;  
+    align-items: center;
     border-bottom:1px solid #e5e5e5;
 }
 
 .found-title {
-    margin-top:33px;
-    margin-bottom:30px;   
+    margin:0; 
     font-size:21px;
     line-height: 26px;
     font-weight: 700;
@@ -1048,8 +1053,6 @@ map {
     display: flex;
     padding: 0;
     margin:0;
-    margin-top:40px;
-    margin-bottom:36px;
     list-style:none;
 }
 
@@ -1143,14 +1146,14 @@ map {
     display: flex;
     padding-left:72px;
     padding-right:72px;
-    padding-top:30px;
+    padding-top:29px;
     padding-bottom:30px;
     border-bottom:1px solid #e5e5e5;
 }
 
 .hotel-info {
     padding:0;
-    margin:0;
+    margin-top:0;
     margin-left:30px;
 }
 
