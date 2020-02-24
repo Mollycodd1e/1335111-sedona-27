@@ -855,7 +855,7 @@ map {
 .house-type-input-ckeckbox:checked:focus +label::after,
 .infrastructure-input-ckeckbox:checked:hover + label::after,
 .house-type-input-ckeckbox:checked:hover +label::after {
-    outline:3px thin dotted #68aff7;
+    outline:3px dotted #68aff7;
 }
 
 .filter-range {
