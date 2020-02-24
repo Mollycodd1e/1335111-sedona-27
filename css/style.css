@@ -847,6 +847,17 @@ map {
     background-position:0 0;
 }
 
+.infrastructure-input-ckeckbox:not(:checked):focus + label::before,
+.house-type-input-ckeckbox:not(:checked):focus + label::before,
+.infrastructure-input-ckeckbox:not(:checked):hover + label::before,
+.house-type-input-ckeckbox:not(:checked):hover + label::before,
+.infrastructure-input-ckeckbox:checked:focus + label::after,
+.house-type-input-ckeckbox:checked:focus +label::after,
+.infrastructure-input-ckeckbox:checked:hover + label::after,
+.house-type-input-ckeckbox:checked:hover +label::after {
+    outline:thin dotted;
+    outline:3px solid #68aff7;
+}
 
 .filter-range {
     width: 330px;
