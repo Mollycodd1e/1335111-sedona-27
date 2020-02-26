@@ -412,8 +412,16 @@ a {
 }
 
 map {
-    position: relative;
+    display:block;
+    position: absolute;
+    z-index: 1;
 }
+
+.frame-map {
+    position: absolute;
+    z-index: 2;
+    border:0;
+}    
 
 .button-search-hotel:hover,
 .button-search-hotel:focus {
@@ -439,7 +447,7 @@ map {
     padding-bottom:55px;
     font-weight: 700;
     background-color: #ffffff;
-    z-index:1;
+    z-index:3;
 }
 
 .travel-form-close {
@@ -636,6 +644,7 @@ map {
     box-sizing: border-box;
     background-color:#ffffff;
     position: absolute;
+    z-index:3;
     align-items:center;
     width: 1200px;
     padding-left:122px;
@@ -901,7 +910,7 @@ map {
     display: inline-block;
   
     font-size: 14px;
-    line-height: 38px;
+    line-height: 32px;
     vertical-align: top;
 
     cursor: pointer;
@@ -909,9 +918,8 @@ map {
 
 .price-control .min-price,
 .price-control .max-price {
-  width: 90px;
-  padding-left: 65px;
-  padding-top:0px;
+    width: 90px;
+    padding-left: 65px;
 }
 
 .price-control .max-price {
@@ -921,9 +929,9 @@ map {
 .price-control input {
     width: 50px;
     margin: 0;
-
+    
     color: inherit;
-    font: inherit;
+    font:inherit;
     background: none;
     border: none;
 }
@@ -1307,4 +1315,15 @@ map {
 
 .inner-footer {
     position: static;
+}
+
+.inner-footer .footer-contacts {
+    padding:0;
+    padding-top:2px;
+    padding-left:5px;
+}
+
+.inner-footer .footer-social {
+    margin:0;
+    margin-left:174px;
 }
