@@ -450,13 +450,47 @@ map {
     z-index:3;
 }
 
-.travel-form-hidden,
-.travel-form-close {
+.travel-form-hidden {
     display:none;
 }
 
+.travel-form-close {    
+    animation: formhide 1.3s forwards;
+}    
+
 .travel-form-open {
     display:block;
+    animation: formshow 1.3s forwards;
+}
+
+@keyframes formshow {
+    0% {
+        /*top:-310px;*/
+        top:-155px;
+        transform: scaleY(0);
+        /*opacity: 0;*/
+    }
+
+    to {
+        top:100%;
+        transform: scaleY(1);
+        /*opacity: 1;*/
+    }
+}
+
+@keyframes formhide {
+    0% {
+        top:100%;
+        transform: scaleY(1);
+        /*opacity: 1;*/
+    }
+
+    to {
+        /*top:-310px;*/
+        top:-155px;
+        transform: scaleY(0);
+        /*opacity: 0;*/
+    }
 }
 
 .travel-input label {
