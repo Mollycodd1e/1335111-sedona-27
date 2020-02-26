@@ -450,6 +450,10 @@ map {
     z-index:3;
 }
 
+.travel-form-hidden {
+    display: none;  
+}
+
 .travel-form-close {
     display:none;
 }
