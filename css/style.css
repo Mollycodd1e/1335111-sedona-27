@@ -454,6 +454,10 @@ map {
     display:none;
 }
 
+.travel-form-open {
+    display:block;
+}
+
 .travel-input label {
  letter-spacing: 0.2px;
 }
