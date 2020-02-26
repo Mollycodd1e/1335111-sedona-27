@@ -12,7 +12,7 @@
     var form = document.querySelector(".travel-form");
 
 
-    form.classList.add('travel-form-close');
+    form.classList.add('travel-form-hidden');
 
     button.addEventListener("click",function() {
         form.classList.toggle("travel-form-open");
