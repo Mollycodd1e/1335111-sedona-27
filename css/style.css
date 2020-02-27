@@ -399,6 +399,7 @@ a {
 
 .button-search-hotel {
     display: block;
+    position: relative;
     width: 568px;
     height: 86px;
     font-size: 21px;
@@ -409,6 +410,7 @@ a {
     color:#ffffff;
     background-color:#766357;
     border:none;
+    z-index:4;
 }
 
 map {
@@ -455,22 +457,19 @@ map {
 }
 
 .travel-form-open {
-    display:block;
-    animation: formhide 1.3s forwards;
+    display: block;
+    animation: formshow 1.0s forwards;
 }
 
 @keyframes formshow {
     0% {
-        /*top:-310px;*/
-        top:-155px;
+        top:-180px;
         transform: scaleY(0);
-        /*opacity: 0;*/
    }
 
     to {
         top:100%;
         transform: scaleY(1);
-        /*opacity: 1;*/
    }
 }
 
