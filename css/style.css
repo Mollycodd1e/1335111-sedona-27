@@ -295,9 +295,11 @@ a {
 }   
 
 .features { 
+    position: relative;
     min-height: 246px;
     padding-bottom:10px;
     background-color:#eeeeee;
+    z-index:6;
 }
 
 .features-list {
@@ -375,14 +377,19 @@ a {
 }
 
 .interested-wrapper {
+    position: relative;
     width:436px;
-    margin: auto;
+    /*margin: auto;*/
+    padding-left:382px;
+    padding-right:382px;
     line-height: 24px;
-    margin-top:50px;
-    padding-bottom:3px;
-    margin-bottom: 42px;
+    padding-top:50px;
+    padding-bottom:45px;
+    
     text-align: center;
     color:#333333;  
+    background-color: #ffffff;
+    z-index:4;
 }
 
 .interested-wrapper h2 {
@@ -458,21 +465,12 @@ map {
 
 .travel-form-open {
     display: block;
-    animation-duration: 1s;
+    
+    animation-duration: 1.3s;
     animation-name: formshow;
     
     /*animation: formshow 1.0s forwards;*/
 }
-
-.travel-form-open-flex {
-
-    animation-duration: 0.6s;
-  
-    animation-name: opened-modal;
-  
-    display: flex;
-  
-  }
 
 @keyframes formshow {
     /*0% {
@@ -484,7 +482,7 @@ map {
         top:100%;
         transform: scaleY(1);
    }*/
-   0% { transform: translateY(-396px); }
+   0% { transform: translateY(-320px); }
 
   /* 70% { transform: translateY(30px); }
  
@@ -689,10 +687,10 @@ map {
     padding-left:122px;
     padding-right:93px;
     padding-top:29px;
-    padding-bottom:29px;
+    padding-bottom:30px;
     opacity: 0.9;
     left:0;
-    bottom:6px;
+    bottom:5px;
 }
 
 .footer-contacts {
@@ -1354,6 +1352,8 @@ map {
 
 .inner-footer {
     position: static;
+    padding-top:28px;
+    padding-bottom:28px;
 }
 
 .inner-footer .footer-contacts {
