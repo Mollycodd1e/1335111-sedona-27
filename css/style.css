@@ -824,6 +824,7 @@ map {
 .house-type-item label{
     position: relative;
     display: block;
+    cursor:pointer;
 }
 
 .infrastructure-list,
@@ -843,6 +844,7 @@ map {
     background-image: url("../img/checkbox-off.png");
     background-repeat: no-repeat;
     background-position:0 0;
+    cursor:pointer;
 }
 
 .infrastructure-input-ckeckbox:checked + label::after,
@@ -857,6 +859,7 @@ map {
     background-image: url("../img/checkbox-on.png");
     background-repeat: no-repeat;
     background-position:0 0;
+    cursor:pointer;
 }
 
 .infrastructure-input-ckeckbox:not(:checked):disabled + label::before,
