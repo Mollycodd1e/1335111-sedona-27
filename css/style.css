@@ -458,11 +458,24 @@ map {
 
 .travel-form-open {
     display: block;
-    animation: formshow 1.0s forwards;
+    animation-duration: 1s;
+    animation-name: formshow;
+    
+    /*animation: formshow 1.0s forwards;*/
 }
 
+.travel-form-open-flex {
+
+    animation-duration: 0.6s;
+  
+    animation-name: opened-modal;
+  
+    display: flex;
+  
+  }
+
 @keyframes formshow {
-    0% {
+    /*0% {
         top:-180px;
         transform: scaleY(0);
    }
@@ -470,7 +483,14 @@ map {
     to {
         top:100%;
         transform: scaleY(1);
-   }
+   }*/
+   0% { transform: translateY(-396px); }
+
+  /* 70% { transform: translateY(30px); }
+ 
+   90% { transform: translateY(-10px); }*/
+ 
+   100% { transform: translateY(0); }
 }
 
 .travel-input label {
