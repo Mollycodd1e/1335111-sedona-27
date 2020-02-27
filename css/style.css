@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
     font-family: "PT Sans",Arial,sans-serif ;
     font-size: 14px;
@@ -20,7 +22,8 @@ input[type="radio"].visually-hidden {
     border: 0;
     padding: 0;
     white-space:nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow:hidden;
     background-position: 0 0;
@@ -31,7 +34,8 @@ input[type="radio"].visually-hidden {
     width:1200px;
     margin:0 auto;
     background-color: #ffffff;
-    box-shadow: 0px 0 15px 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0 15px 5px rgba(0,0,0,0.2);
+            box-shadow: 0px 0 15px 5px rgba(0,0,0,0.2);
 }
 
 a {
@@ -53,8 +57,11 @@ a {
 }
 
 .site-navigation {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;  
-    flex-wrap:wrap;
+    -ms-flex-wrap:wrap;  
+        flex-wrap:wrap;
     list-style:none; 
     padding:0;
     margin:0;
@@ -164,6 +171,8 @@ a {
 }
 
 .feature {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     background-color:#81b3d2;
 }
@@ -195,6 +204,8 @@ a {
 }
 
 .recommendation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style:none;
     min-height: 330px;
@@ -303,8 +314,12 @@ a {
 }
 
 .features-list {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex; 
-    justify-content: space-between;
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between;
     list-style:none;
     margin: 0;
     padding:0;
@@ -466,18 +481,29 @@ map {
 .travel-form-open {
     display: block;
     
-    animation-duration: 1.3s;
-    animation-name: formshow;
+    -webkit-animation-duration: 1.3s;
+    
+            animation-duration: 1.3s;
+    -webkit-animation-name: formshow;
+            animation-name: formshow;
     
     /*animation: formshow 1.0s forwards;*/
 }
 
-@keyframes formshow {
+@-webkit-keyframes formshow {
  
-   0% { transform: translateY(-394px); }
+   0% { -webkit-transform: translateY(-394px); transform: translateY(-394px); }
 
  
-   100% { transform: translateY(0); }
+   100% { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+@keyframes formshow {
+ 
+   0% { -webkit-transform: translateY(-394px); transform: translateY(-394px); }
+
+ 
+   100% { -webkit-transform: translateY(0); transform: translateY(0); }
 }
 
 .travel-input label {
@@ -485,8 +511,12 @@ map {
 }
 
 .travel-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     margin-bottom:29px;
     height: 38px;
@@ -536,8 +566,12 @@ map {
 }
 
 .people-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 26px;
 }
 
@@ -666,12 +700,17 @@ map {
 }
 
 .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color:#ffffff;
     position: absolute;
     z-index:3;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     width: 1200px;
     padding-left:122px;
     padding-right:93px;
@@ -705,9 +744,14 @@ map {
 }
 
 .footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     list-style:none;
     width: 150px;
     margin:0;
@@ -716,9 +760,15 @@ map {
 }
 
 .social-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 46px;
     height: 48px;
     color:#ffffff;
@@ -752,8 +802,12 @@ map {
 }
 
 .footer-htmlacademy {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     margin-left: 228px;
 }
@@ -773,6 +827,8 @@ map {
 }
 
 .filter-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right:72px;
     margin-left:72px;
@@ -932,7 +988,9 @@ map {
     height: 22px;
   
     background: #ffffff;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .price-control label {
@@ -992,7 +1050,8 @@ map {
     background-color: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 
@@ -1006,7 +1065,8 @@ map {
     background-color: #ababab;
     border: 9px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 
@@ -1053,13 +1113,19 @@ map {
 }
 
 .found {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-left:72px;
     padding-right:65px;
     padding-top:23px;
     padding-bottom:21px;  
-    align-items: center;
+    -webkit-box-align: center;  
+        -ms-flex-align: center;  
+            align-items: center;
     border-bottom:1px solid #e5e5e5;
 }
 
@@ -1071,16 +1137,24 @@ map {
 }
 
 .found-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size:12px;
     line-height:18px;
     margin-left:45px;
 }
 
 .found-filter-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style:none;
     margin:0;
     padding:0;
@@ -1104,6 +1178,8 @@ map {
 }
 
 .found-sort-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
     margin:0;
@@ -1202,6 +1278,8 @@ map {
 }
 
 .hotel-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left:72px;
     padding-right:72px;
