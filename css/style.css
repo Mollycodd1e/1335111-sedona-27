@@ -944,6 +944,7 @@ map {
 .price-control {
     position: relative;
 
+    padding-top:5px;
     height: 32px;
     margin-bottom: 20px;
    
@@ -971,7 +972,6 @@ map {
     display: inline-block;
   
     font-size: 14px;
-    line-height: 32px;
     vertical-align: top;
 
     cursor: pointer;
