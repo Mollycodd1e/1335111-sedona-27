@@ -170,6 +170,7 @@ a {
 }
 
 .feature-item {
+    width:280px;
     padding-top:46px;
     padding-bottom:54px;
     padding-left:60px;
