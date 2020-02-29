@@ -70,22 +70,22 @@ a {
     padding-bottom:15px;
 }
 
-.site-navigation li:first-child,
-.site-navigation li:nth-child(2) {
+.site-navigation li:nth-child(4n+1),
+.site-navigation li:nth-child(4n+2) {
     text-align:left;
 }
 
-.site-navigation li:nth-child(2) {
+.site-navigation li:nth-child(4n+2) {
     margin-right: 100px;
     
 }
 
-.site-navigation li:last-child,
-.site-navigation li:nth-child(3) {
+.site-navigation li:nth-child(4n),
+.site-navigation li:nth-child(4n+3) {
     text-align:right;
 }
 
-.site-navigation li:nth-child(3) {
+.site-navigation li:nth-child(3n) {
     padding-right:2px;
     width:237px;
    
@@ -222,38 +222,37 @@ a {
     text-align: justify;
 }
 
-.recommendation-item:first-child p {
+.recommendation-item:nth-child(3n+1) p {
     margin-left: 72px; 
     margin-right: 74px; 
     margin-top:23px;
     color:#333333;
 }
 
-.recommendation-item:nth-child(2) p {
+.recommendation-item:nth-child(3n+2) p {
     margin-left: 56px; 
     margin-right: 56px; 
     margin-top:23px;
     color:#333333;
 }
 
-.recommendation-item:last-child p {
+.recommendation-item:nth-child(3n) p {
     margin-left: 64px; 
     margin-right: 63px; 
     margin-top:23px;
     color:#333333;
 }
 
-.recommendation-item:first-child h3 {
+.recommendation-item:nth-child(3n+1) h3 {
     padding-left:165px;
 }
 
-.recommendation-item:nth-child(2) h3 {
+.recommendation-item:nth-child(3n+2) h3 {
     padding-left:181px;
 }
 
-
-.recommendation-item:last-child h3 {
-   padding-left:149px; 
+.recommendation-item:nth-child(3n) h3 {
+    padding-left:149px; 
 }
 
 .recommendation-item h3::before {
@@ -264,7 +263,7 @@ a {
     background-position: 0;
 }
 
-.recommendation-item:first-child h3::before {
+.recommendation-item:nth-child(3n+1) h3::before {
     width: 75px;
     height: 72px;
     bottom:50px;
@@ -272,7 +271,7 @@ a {
     background-image: url("../img/icon-1.svg");
 }
 
-.recommendation-item:nth-child(2) h3::before {
+.recommendation-item:nth-child(3n+2) h3::before {
     width: 74px;
     height: 70px;
     bottom:51px;
@@ -280,7 +279,7 @@ a {
     background-image: url("../img/icon-2.svg");
 }
 
-.recommendation-item:last-child h3::before {
+.recommendation-item:nth-child(3n) h3::before {
     width: 64px;
     height: 76px;
     bottom:50px;
@@ -743,7 +742,6 @@ map {
     width: 150px;
     margin:0;
     margin-left:179px;
-    margin-right:5px;
     padding:0;
 }
 
@@ -753,8 +751,17 @@ map {
     justify-content: center;
     width: 46px;
     height: 48px;
+    margin-bottom:5px;
     color:#ffffff;
     background-color:#81b3d2 ;
+}
+
+.footer-social li{
+    margin-right:5px;
+}
+
+.footer-social li:nth-child(3n) {
+    margin-right:0px;
 }
 
 .social-button:hover,
@@ -787,7 +794,7 @@ map {
     display: flex;
     align-items: center;
     margin: 0;
-    margin-left: 228px;
+    margin-left:auto;
 }
 
 .footer-copyright {
@@ -1117,7 +1124,6 @@ map {
     list-style:none;
     margin:0;
     padding:0;
-    margin-left: 40px;
     font-size:12px;
     line-height:18px;
 }
@@ -1127,8 +1133,12 @@ map {
     cursor: pointer;
 }
 
-.found-filter-list li:nth-child(2),
-.found-filter-list li:last-child {
+.found-filter-list li:first-child {
+    margin-left: 40px;
+}
+
+.found-filter-list li:nth-child(even),
+.found-filter-list li:nth-child(odd):not(:first-child) {
    margin-left:33px;
 }
 
