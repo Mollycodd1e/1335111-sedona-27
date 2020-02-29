@@ -219,7 +219,7 @@ a {
     padding: 0;
     margin: 0;
     padding-top: 161px; 
-    text-align: justify;
+    text-align: center;
 }
 
 .recommendation-item:nth-child(3n+1) p {
@@ -241,18 +241,6 @@ a {
     margin-right: 63px; 
     margin-top:23px;
     color:#333333;
-}
-
-.recommendation-item:nth-child(3n+1) h3 {
-    padding-left:165px;
-}
-
-.recommendation-item:nth-child(3n+2) h3 {
-    padding-left:181px;
-}
-
-.recommendation-item:nth-child(3n) h3 {
-    padding-left:149px; 
 }
 
 .recommendation-item h3::before {
@@ -794,11 +782,11 @@ map {
     display: flex;
     align-items: center;
     margin: 0;
-    margin-left:auto;
+    margin-left:228px;
 }
 
 .footer-copyright {
-    padding-right:6px;
+    padding-right:8px;
 }
 
 .filter {
