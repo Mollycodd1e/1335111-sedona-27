@@ -739,11 +739,11 @@ map {
 .footer-social {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     list-style:none;
     width: 150px;
     margin:0;
     margin-left:179px;
+    margin-right:5px;
     padding:0;
 }
 
